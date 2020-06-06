@@ -157,6 +157,12 @@
     <Compile Include="Formularios\FormPrincipal.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Formularios\Frmdddd.Designer.vb">
+      <DependentUpon>Frmdddd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frmdddd.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formularios\Login.vb">
       <SubType>Form</SubType>
     </Compile>
