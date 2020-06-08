@@ -7,6 +7,8 @@ Public Class FormPrincipal
     Private SubMenuActual As Panel
     Dim lx, ly, sw, sh As Integer
 
+    Dim countVentas, countCompras, countAlmacen, countRegistro As Integer
+
     <DllImport("user32.DLL", EntryPoint:="ReleaseCapture")>
     Private Shared Sub ReleaseCapture()
     End Sub
@@ -34,7 +36,7 @@ Public Class FormPrincipal
         InitializeComponent()
         bordeBotonIzq = New Panel()
         bordeBotonIzq.Visible = False
-        bordeBotonIzq.Size = New Size(3, 35)
+        bordeBotonIzq.Size = New Size(3, 43)
         GradientePanel.Controls.Add(bordeBotonIzq)
         Text = String.Empty
         Me.DoubleBuffered = True
@@ -94,9 +96,6 @@ Public Class FormPrincipal
             DesactivarBoton()
             HideSubMenu()
             botonActual = CType(senderBtn, IconButton)
-            'botonActual.TextAlign = ContentAlignment.MiddleCenter
-            'botonActual.ImageAlign = ContentAlignment.MiddleRight
-            'botonActual.TextImageRelation = TextImageRelation.TextBeforeImage
 
             bordeBotonIzq.BackColor = color
             bordeBotonIzq.Location = New Point(2, botonActual.Location.Y)
@@ -137,26 +136,48 @@ Public Class FormPrincipal
     End Sub
 
     Private Sub BtnCompras_Click(sender As Object, e As EventArgs) Handles BtnCompras.Click
-        ActivarBoton(sender, RGBColors.color)
-        SubMenuCompra.Height = 315
-        SubMenuActual = SubMenuCompra
-        ShowMenu(SubMenuCompra)
+        countCompras += 1
+        If countCompras Mod 2 = 0 Then
+            DesactivarBoton()
+            HideSubMenu()
+        Else
+            ActivarBoton(sender, RGBColors.color)
+            SubMenuCompra.Height = 315
+            SubMenuActual = SubMenuCompra
+            ShowMenu(SubMenuCompra)
+        End If
+
     End Sub
 
     Private Sub BtnAlmacen_Click(sender As Object, e As EventArgs) Handles BtnAlmacen.Click
-        ActivarBoton(sender, RGBColors.color)
-        SubMenuAlmacen.Height = 735
-        SubMenuActual = SubMenuAlmacen
-        ShowMenu(SubMenuAlmacen)
+        countAlmacen += 1
+        If countAlmacen Mod 2 = 0 Then
+            DesactivarBoton()
+            HideSubMenu()
+        Else
+            ActivarBoton(sender, RGBColors.color)
+            SubMenuAlmacen.Height = 735
+            SubMenuActual = SubMenuAlmacen
+            ShowMenu(SubMenuAlmacen)
+        End If
+
     End Sub
 
 
 
     Private Sub BtnVentas_Click(sender As Object, e As EventArgs) Handles BtnVentas.Click
-        ActivarBoton(sender, RGBColors.color)
-        SubMenuVentas.Height = 455
-        SubMenuActual = SubMenuVentas
-        ShowMenu(SubMenuVentas)
+        countVentas += 1
+        If countVentas Mod 2 = 0 Then
+            DesactivarBoton()
+            HideSubMenu()
+        Else
+            ActivarBoton(sender, RGBColors.color)
+            SubMenuVentas.Height = 455
+            SubMenuActual = SubMenuVentas
+            ShowMenu(SubMenuVentas)
+        End If
+
+
     End Sub
 
 

@@ -23,8 +23,8 @@ Partial Class FormPrincipal
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim Animation1 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormPrincipal))
+        Dim Animation2 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Me.BarraTitulo = New System.Windows.Forms.Panel()
         Me.RestoreWindow = New System.Windows.Forms.PictureBox()
         Me.MinimizeWindow = New System.Windows.Forms.PictureBox()
@@ -133,7 +133,7 @@ Partial Class FormPrincipal
         Me.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top
         Me.BarraTitulo.Location = New System.Drawing.Point(0, 0)
         Me.BarraTitulo.Name = "BarraTitulo"
-        Me.BarraTitulo.Size = New System.Drawing.Size(1284, 38)
+        Me.BarraTitulo.Size = New System.Drawing.Size(1200, 38)
         Me.BarraTitulo.TabIndex = 1
         '
         'RestoreWindow
@@ -142,7 +142,7 @@ Partial Class FormPrincipal
         Me.RestoreWindow.BackgroundImage = Global.PuntoVenta.My.Resources.Resources.Icono_Restaurar
         Me.RestoreWindow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.SubMenuTransition.SetDecoration(Me.RestoreWindow, BunifuAnimatorNS.DecorationType.None)
-        Me.RestoreWindow.Location = New System.Drawing.Point(1221, 6)
+        Me.RestoreWindow.Location = New System.Drawing.Point(1137, 6)
         Me.RestoreWindow.Name = "RestoreWindow"
         Me.RestoreWindow.Size = New System.Drawing.Size(25, 25)
         Me.RestoreWindow.TabIndex = 3
@@ -155,7 +155,7 @@ Partial Class FormPrincipal
         Me.MinimizeWindow.BackgroundImage = Global.PuntoVenta.My.Resources.Resources.Icono_Minimizar
         Me.MinimizeWindow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.SubMenuTransition.SetDecoration(Me.MinimizeWindow, BunifuAnimatorNS.DecorationType.None)
-        Me.MinimizeWindow.Location = New System.Drawing.Point(1190, 6)
+        Me.MinimizeWindow.Location = New System.Drawing.Point(1106, 6)
         Me.MinimizeWindow.Name = "MinimizeWindow"
         Me.MinimizeWindow.Size = New System.Drawing.Size(25, 25)
         Me.MinimizeWindow.TabIndex = 3
@@ -167,7 +167,7 @@ Partial Class FormPrincipal
         Me.MaximizeWindow.BackgroundImage = Global.PuntoVenta.My.Resources.Resources.Icono_Maximizar
         Me.MaximizeWindow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.SubMenuTransition.SetDecoration(Me.MaximizeWindow, BunifuAnimatorNS.DecorationType.None)
-        Me.MaximizeWindow.Location = New System.Drawing.Point(1221, 6)
+        Me.MaximizeWindow.Location = New System.Drawing.Point(1137, 6)
         Me.MaximizeWindow.Name = "MaximizeWindow"
         Me.MaximizeWindow.Size = New System.Drawing.Size(25, 25)
         Me.MaximizeWindow.TabIndex = 3
@@ -179,7 +179,7 @@ Partial Class FormPrincipal
         Me.CloseWindow.BackgroundImage = Global.PuntoVenta.My.Resources.Resources.Icono_cerrar_FN
         Me.CloseWindow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.SubMenuTransition.SetDecoration(Me.CloseWindow, BunifuAnimatorNS.DecorationType.None)
-        Me.CloseWindow.Location = New System.Drawing.Point(1252, 6)
+        Me.CloseWindow.Location = New System.Drawing.Point(1168, 6)
         Me.CloseWindow.Name = "CloseWindow"
         Me.CloseWindow.Size = New System.Drawing.Size(25, 25)
         Me.CloseWindow.TabIndex = 2
@@ -218,7 +218,7 @@ Partial Class FormPrincipal
         Me.SideBar.Dock = System.Windows.Forms.DockStyle.Left
         Me.SideBar.Location = New System.Drawing.Point(0, 38)
         Me.SideBar.Name = "SideBar"
-        Me.SideBar.Size = New System.Drawing.Size(266, 750)
+        Me.SideBar.Size = New System.Drawing.Size(266, 662)
         Me.SideBar.TabIndex = 2
         '
         'GradientePanel
@@ -245,7 +245,7 @@ Partial Class FormPrincipal
         Me.GradientePanel.Location = New System.Drawing.Point(7, 6)
         Me.GradientePanel.Name = "GradientePanel"
         Me.GradientePanel.Quality = 10
-        Me.GradientePanel.Size = New System.Drawing.Size(252, 770)
+        Me.GradientePanel.Size = New System.Drawing.Size(252, 682)
         Me.GradientePanel.TabIndex = 1
         '
         'SubMenuRegistro
@@ -272,10 +272,10 @@ Partial Class FormPrincipal
         Me.SubMenuRegistro.GradientBottomRight = System.Drawing.Color.Teal
         Me.SubMenuRegistro.GradientTopLeft = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.SubMenuRegistro.GradientTopRight = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.SubMenuRegistro.Location = New System.Drawing.Point(0, 927)
+        Me.SubMenuRegistro.Location = New System.Drawing.Point(0, 202)
         Me.SubMenuRegistro.Name = "SubMenuRegistro"
         Me.SubMenuRegistro.Quality = 10
-        Me.SubMenuRegistro.Size = New System.Drawing.Size(235, 10)
+        Me.SubMenuRegistro.Size = New System.Drawing.Size(252, 10)
         Me.SubMenuRegistro.TabIndex = 16
         Me.SubMenuRegistro.Visible = False
         '
@@ -299,7 +299,7 @@ Partial Class FormPrincipal
         Me.IconButton34.Location = New System.Drawing.Point(0, 455)
         Me.IconButton34.Name = "IconButton34"
         Me.IconButton34.Rotation = 0R
-        Me.IconButton34.Size = New System.Drawing.Size(235, 35)
+        Me.IconButton34.Size = New System.Drawing.Size(252, 35)
         Me.IconButton34.TabIndex = 14
         Me.IconButton34.Text = "Reporteador de cajas"
         Me.IconButton34.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -325,7 +325,7 @@ Partial Class FormPrincipal
         Me.IconButton33.Location = New System.Drawing.Point(0, 420)
         Me.IconButton33.Name = "IconButton33"
         Me.IconButton33.Rotation = 0R
-        Me.IconButton33.Size = New System.Drawing.Size(235, 35)
+        Me.IconButton33.Size = New System.Drawing.Size(252, 35)
         Me.IconButton33.TabIndex = 13
         Me.IconButton33.Text = "Actualizacion de ventas"
         Me.IconButton33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -351,7 +351,7 @@ Partial Class FormPrincipal
         Me.IconButton32.Location = New System.Drawing.Point(0, 385)
         Me.IconButton32.Name = "IconButton32"
         Me.IconButton32.Rotation = 0R
-        Me.IconButton32.Size = New System.Drawing.Size(235, 35)
+        Me.IconButton32.Size = New System.Drawing.Size(252, 35)
         Me.IconButton32.TabIndex = 12
         Me.IconButton32.Text = "Consolidacion de ventas"
         Me.IconButton32.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -377,7 +377,7 @@ Partial Class FormPrincipal
         Me.IconButton31.Location = New System.Drawing.Point(0, 350)
         Me.IconButton31.Name = "IconButton31"
         Me.IconButton31.Rotation = 0R
-        Me.IconButton31.Size = New System.Drawing.Size(235, 35)
+        Me.IconButton31.Size = New System.Drawing.Size(252, 35)
         Me.IconButton31.TabIndex = 11
         Me.IconButton31.Text = "Devoluciones"
         Me.IconButton31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -403,7 +403,7 @@ Partial Class FormPrincipal
         Me.IconButton30.Location = New System.Drawing.Point(0, 315)
         Me.IconButton30.Name = "IconButton30"
         Me.IconButton30.Rotation = 0R
-        Me.IconButton30.Size = New System.Drawing.Size(235, 35)
+        Me.IconButton30.Size = New System.Drawing.Size(252, 35)
         Me.IconButton30.TabIndex = 10
         Me.IconButton30.Text = "Sobrante de cajas"
         Me.IconButton30.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -429,7 +429,7 @@ Partial Class FormPrincipal
         Me.IconButton21.Location = New System.Drawing.Point(0, 280)
         Me.IconButton21.Name = "IconButton21"
         Me.IconButton21.Rotation = 0R
-        Me.IconButton21.Size = New System.Drawing.Size(235, 35)
+        Me.IconButton21.Size = New System.Drawing.Size(252, 35)
         Me.IconButton21.TabIndex = 9
         Me.IconButton21.Text = "Depositos de rutas"
         Me.IconButton21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -455,7 +455,7 @@ Partial Class FormPrincipal
         Me.IconButton22.Location = New System.Drawing.Point(0, 245)
         Me.IconButton22.Name = "IconButton22"
         Me.IconButton22.Rotation = 0R
-        Me.IconButton22.Size = New System.Drawing.Size(235, 35)
+        Me.IconButton22.Size = New System.Drawing.Size(252, 35)
         Me.IconButton22.TabIndex = 8
         Me.IconButton22.Text = "Depositos"
         Me.IconButton22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -481,7 +481,7 @@ Partial Class FormPrincipal
         Me.IconButton23.Location = New System.Drawing.Point(0, 210)
         Me.IconButton23.Name = "IconButton23"
         Me.IconButton23.Rotation = 0R
-        Me.IconButton23.Size = New System.Drawing.Size(235, 35)
+        Me.IconButton23.Size = New System.Drawing.Size(252, 35)
         Me.IconButton23.TabIndex = 7
         Me.IconButton23.Text = "Captura de cheques y tarjetas"
         Me.IconButton23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -507,7 +507,7 @@ Partial Class FormPrincipal
         Me.IconButton24.Location = New System.Drawing.Point(0, 175)
         Me.IconButton24.Name = "IconButton24"
         Me.IconButton24.Rotation = 0R
-        Me.IconButton24.Size = New System.Drawing.Size(235, 35)
+        Me.IconButton24.Size = New System.Drawing.Size(252, 35)
         Me.IconButton24.TabIndex = 6
         Me.IconButton24.Text = "Cajeros"
         Me.IconButton24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -533,7 +533,7 @@ Partial Class FormPrincipal
         Me.IconButton25.Location = New System.Drawing.Point(0, 140)
         Me.IconButton25.Name = "IconButton25"
         Me.IconButton25.Rotation = 0R
-        Me.IconButton25.Size = New System.Drawing.Size(235, 35)
+        Me.IconButton25.Size = New System.Drawing.Size(252, 35)
         Me.IconButton25.TabIndex = 5
         Me.IconButton25.Text = "Etiquetas"
         Me.IconButton25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -559,7 +559,7 @@ Partial Class FormPrincipal
         Me.IconButton26.Location = New System.Drawing.Point(0, 105)
         Me.IconButton26.Name = "IconButton26"
         Me.IconButton26.Rotation = 0R
-        Me.IconButton26.Size = New System.Drawing.Size(235, 35)
+        Me.IconButton26.Size = New System.Drawing.Size(252, 35)
         Me.IconButton26.TabIndex = 4
         Me.IconButton26.Text = "Checador de precios"
         Me.IconButton26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -585,7 +585,7 @@ Partial Class FormPrincipal
         Me.IconButton27.Location = New System.Drawing.Point(0, 70)
         Me.IconButton27.Name = "IconButton27"
         Me.IconButton27.Rotation = 0R
-        Me.IconButton27.Size = New System.Drawing.Size(235, 35)
+        Me.IconButton27.Size = New System.Drawing.Size(252, 35)
         Me.IconButton27.TabIndex = 3
         Me.IconButton27.Text = "Cancelacion de facturas"
         Me.IconButton27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -611,7 +611,7 @@ Partial Class FormPrincipal
         Me.IconButton28.Location = New System.Drawing.Point(0, 35)
         Me.IconButton28.Name = "IconButton28"
         Me.IconButton28.Rotation = 0R
-        Me.IconButton28.Size = New System.Drawing.Size(235, 35)
+        Me.IconButton28.Size = New System.Drawing.Size(252, 35)
         Me.IconButton28.TabIndex = 2
         Me.IconButton28.Text = "Facturacion de varios recibos"
         Me.IconButton28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -637,7 +637,7 @@ Partial Class FormPrincipal
         Me.IconButton29.Location = New System.Drawing.Point(0, 0)
         Me.IconButton29.Name = "IconButton29"
         Me.IconButton29.Rotation = 0R
-        Me.IconButton29.Size = New System.Drawing.Size(235, 35)
+        Me.IconButton29.Size = New System.Drawing.Size(252, 35)
         Me.IconButton29.TabIndex = 1
         Me.IconButton29.Text = "Factura general del dia"
         Me.IconButton29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -660,10 +660,10 @@ Partial Class FormPrincipal
         Me.IconButton20.IconColor = System.Drawing.Color.White
         Me.IconButton20.IconSize = 32
         Me.IconButton20.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton20.Location = New System.Drawing.Point(0, 884)
+        Me.IconButton20.Location = New System.Drawing.Point(0, 159)
         Me.IconButton20.Name = "IconButton20"
         Me.IconButton20.Rotation = 0R
-        Me.IconButton20.Size = New System.Drawing.Size(235, 43)
+        Me.IconButton20.Size = New System.Drawing.Size(252, 43)
         Me.IconButton20.TabIndex = 15
         Me.IconButton20.Text = "      Registro"
         Me.IconButton20.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -688,10 +688,10 @@ Partial Class FormPrincipal
         Me.SubMenuCompra.GradientBottomRight = System.Drawing.Color.Teal
         Me.SubMenuCompra.GradientTopLeft = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.SubMenuCompra.GradientTopRight = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.SubMenuCompra.Location = New System.Drawing.Point(0, 874)
+        Me.SubMenuCompra.Location = New System.Drawing.Point(0, 149)
         Me.SubMenuCompra.Name = "SubMenuCompra"
         Me.SubMenuCompra.Quality = 10
-        Me.SubMenuCompra.Size = New System.Drawing.Size(235, 10)
+        Me.SubMenuCompra.Size = New System.Drawing.Size(252, 10)
         Me.SubMenuCompra.TabIndex = 14
         Me.SubMenuCompra.Visible = False
         '
@@ -715,7 +715,7 @@ Partial Class FormPrincipal
         Me.BtnReporteadorCompras.Location = New System.Drawing.Point(0, 280)
         Me.BtnReporteadorCompras.Name = "BtnReporteadorCompras"
         Me.BtnReporteadorCompras.Rotation = 0R
-        Me.BtnReporteadorCompras.Size = New System.Drawing.Size(235, 35)
+        Me.BtnReporteadorCompras.Size = New System.Drawing.Size(252, 35)
         Me.BtnReporteadorCompras.TabIndex = 9
         Me.BtnReporteadorCompras.Text = "Reporteador de Compras"
         Me.BtnReporteadorCompras.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -741,7 +741,7 @@ Partial Class FormPrincipal
         Me.BtnNotaCargoxFaltante.Location = New System.Drawing.Point(0, 245)
         Me.BtnNotaCargoxFaltante.Name = "BtnNotaCargoxFaltante"
         Me.BtnNotaCargoxFaltante.Rotation = 0R
-        Me.BtnNotaCargoxFaltante.Size = New System.Drawing.Size(235, 35)
+        Me.BtnNotaCargoxFaltante.Size = New System.Drawing.Size(252, 35)
         Me.BtnNotaCargoxFaltante.TabIndex = 8
         Me.BtnNotaCargoxFaltante.Text = "Nota de cargo por faltante"
         Me.BtnNotaCargoxFaltante.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -767,7 +767,7 @@ Partial Class FormPrincipal
         Me.BtnNotasCredito.Location = New System.Drawing.Point(0, 210)
         Me.BtnNotasCredito.Name = "BtnNotasCredito"
         Me.BtnNotasCredito.Rotation = 0R
-        Me.BtnNotasCredito.Size = New System.Drawing.Size(235, 35)
+        Me.BtnNotasCredito.Size = New System.Drawing.Size(252, 35)
         Me.BtnNotasCredito.TabIndex = 7
         Me.BtnNotasCredito.Text = "Notas de Credito"
         Me.BtnNotasCredito.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -793,7 +793,7 @@ Partial Class FormPrincipal
         Me.BtnProveedores.Location = New System.Drawing.Point(0, 175)
         Me.BtnProveedores.Name = "BtnProveedores"
         Me.BtnProveedores.Rotation = 0R
-        Me.BtnProveedores.Size = New System.Drawing.Size(235, 35)
+        Me.BtnProveedores.Size = New System.Drawing.Size(252, 35)
         Me.BtnProveedores.TabIndex = 6
         Me.BtnProveedores.Text = "Proveedores"
         Me.BtnProveedores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -819,7 +819,7 @@ Partial Class FormPrincipal
         Me.BtnCatalogoPrecios.Location = New System.Drawing.Point(0, 140)
         Me.BtnCatalogoPrecios.Name = "BtnCatalogoPrecios"
         Me.BtnCatalogoPrecios.Rotation = 0R
-        Me.BtnCatalogoPrecios.Size = New System.Drawing.Size(235, 35)
+        Me.BtnCatalogoPrecios.Size = New System.Drawing.Size(252, 35)
         Me.BtnCatalogoPrecios.TabIndex = 5
         Me.BtnCatalogoPrecios.Text = "Catalogo de precios"
         Me.BtnCatalogoPrecios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -845,7 +845,7 @@ Partial Class FormPrincipal
         Me.BtnAnalisisOrden.Location = New System.Drawing.Point(0, 105)
         Me.BtnAnalisisOrden.Name = "BtnAnalisisOrden"
         Me.BtnAnalisisOrden.Rotation = 0R
-        Me.BtnAnalisisOrden.Size = New System.Drawing.Size(235, 35)
+        Me.BtnAnalisisOrden.Size = New System.Drawing.Size(252, 35)
         Me.BtnAnalisisOrden.TabIndex = 4
         Me.BtnAnalisisOrden.Text = "Analisis Ordenes de Compra"
         Me.BtnAnalisisOrden.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -871,7 +871,7 @@ Partial Class FormPrincipal
         Me.BtnContra_recibo.Location = New System.Drawing.Point(0, 70)
         Me.BtnContra_recibo.Name = "BtnContra_recibo"
         Me.BtnContra_recibo.Rotation = 0R
-        Me.BtnContra_recibo.Size = New System.Drawing.Size(235, 35)
+        Me.BtnContra_recibo.Size = New System.Drawing.Size(252, 35)
         Me.BtnContra_recibo.TabIndex = 3
         Me.BtnContra_recibo.Text = "Contra-Recibos"
         Me.BtnContra_recibo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -897,7 +897,7 @@ Partial Class FormPrincipal
         Me.BtnOrdenCompra.Location = New System.Drawing.Point(0, 35)
         Me.BtnOrdenCompra.Name = "BtnOrdenCompra"
         Me.BtnOrdenCompra.Rotation = 0R
-        Me.BtnOrdenCompra.Size = New System.Drawing.Size(235, 35)
+        Me.BtnOrdenCompra.Size = New System.Drawing.Size(252, 35)
         Me.BtnOrdenCompra.TabIndex = 2
         Me.BtnOrdenCompra.Text = "Orden de compra"
         Me.BtnOrdenCompra.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -923,7 +923,7 @@ Partial Class FormPrincipal
         Me.BtnComprasMenu.Location = New System.Drawing.Point(0, 0)
         Me.BtnComprasMenu.Name = "BtnComprasMenu"
         Me.BtnComprasMenu.Rotation = 0R
-        Me.BtnComprasMenu.Size = New System.Drawing.Size(235, 35)
+        Me.BtnComprasMenu.Size = New System.Drawing.Size(252, 35)
         Me.BtnComprasMenu.TabIndex = 1
         Me.BtnComprasMenu.Text = "Compras"
         Me.BtnComprasMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -946,10 +946,10 @@ Partial Class FormPrincipal
         Me.BtnCompras.IconColor = System.Drawing.Color.White
         Me.BtnCompras.IconSize = 32
         Me.BtnCompras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnCompras.Location = New System.Drawing.Point(0, 831)
+        Me.BtnCompras.Location = New System.Drawing.Point(0, 106)
         Me.BtnCompras.Name = "BtnCompras"
         Me.BtnCompras.Rotation = 0R
-        Me.BtnCompras.Size = New System.Drawing.Size(235, 43)
+        Me.BtnCompras.Size = New System.Drawing.Size(252, 43)
         Me.BtnCompras.TabIndex = 13
         Me.BtnCompras.Text = "      Compras"
         Me.BtnCompras.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -989,7 +989,7 @@ Partial Class FormPrincipal
         Me.SubMenuAlmacen.Location = New System.Drawing.Point(0, 96)
         Me.SubMenuAlmacen.Name = "SubMenuAlmacen"
         Me.SubMenuAlmacen.Quality = 10
-        Me.SubMenuAlmacen.Size = New System.Drawing.Size(235, 735)
+        Me.SubMenuAlmacen.Size = New System.Drawing.Size(252, 10)
         Me.SubMenuAlmacen.TabIndex = 11
         Me.SubMenuAlmacen.Visible = False
         '
@@ -1013,7 +1013,7 @@ Partial Class FormPrincipal
         Me.IconButton19.Location = New System.Drawing.Point(0, 700)
         Me.IconButton19.Name = "IconButton19"
         Me.IconButton19.Rotation = 0R
-        Me.IconButton19.Size = New System.Drawing.Size(235, 35)
+        Me.IconButton19.Size = New System.Drawing.Size(252, 35)
         Me.IconButton19.TabIndex = 34
         Me.IconButton19.Text = "Reporteador almacen"
         Me.IconButton19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1039,7 +1039,7 @@ Partial Class FormPrincipal
         Me.IconButton18.Location = New System.Drawing.Point(0, 665)
         Me.IconButton18.Name = "IconButton18"
         Me.IconButton18.Rotation = 0R
-        Me.IconButton18.Size = New System.Drawing.Size(235, 35)
+        Me.IconButton18.Size = New System.Drawing.Size(252, 35)
         Me.IconButton18.TabIndex = 33
         Me.IconButton18.Text = "Conversiones"
         Me.IconButton18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1065,7 +1065,7 @@ Partial Class FormPrincipal
         Me.IconButton17.Location = New System.Drawing.Point(0, 630)
         Me.IconButton17.Name = "IconButton17"
         Me.IconButton17.Rotation = 0R
-        Me.IconButton17.Size = New System.Drawing.Size(235, 35)
+        Me.IconButton17.Size = New System.Drawing.Size(252, 35)
         Me.IconButton17.TabIndex = 32
         Me.IconButton17.Text = "Conceptos"
         Me.IconButton17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1091,7 +1091,7 @@ Partial Class FormPrincipal
         Me.IconButton16.Location = New System.Drawing.Point(0, 595)
         Me.IconButton16.Name = "IconButton16"
         Me.IconButton16.Rotation = 0R
-        Me.IconButton16.Size = New System.Drawing.Size(235, 35)
+        Me.IconButton16.Size = New System.Drawing.Size(252, 35)
         Me.IconButton16.TabIndex = 31
         Me.IconButton16.Text = "Notificaciones"
         Me.IconButton16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1117,7 +1117,7 @@ Partial Class FormPrincipal
         Me.BtnActualizacionInv.Location = New System.Drawing.Point(0, 560)
         Me.BtnActualizacionInv.Name = "BtnActualizacionInv"
         Me.BtnActualizacionInv.Rotation = 0R
-        Me.BtnActualizacionInv.Size = New System.Drawing.Size(235, 35)
+        Me.BtnActualizacionInv.Size = New System.Drawing.Size(252, 35)
         Me.BtnActualizacionInv.TabIndex = 30
         Me.BtnActualizacionInv.Text = "Actualizacion de Inventario"
         Me.BtnActualizacionInv.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1143,7 +1143,7 @@ Partial Class FormPrincipal
         Me.BtnInvSelectivo.Location = New System.Drawing.Point(0, 525)
         Me.BtnInvSelectivo.Name = "BtnInvSelectivo"
         Me.BtnInvSelectivo.Rotation = 0R
-        Me.BtnInvSelectivo.Size = New System.Drawing.Size(235, 35)
+        Me.BtnInvSelectivo.Size = New System.Drawing.Size(252, 35)
         Me.BtnInvSelectivo.TabIndex = 29
         Me.BtnInvSelectivo.Text = "Inventario Selectivo"
         Me.BtnInvSelectivo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1169,7 +1169,7 @@ Partial Class FormPrincipal
         Me.BtnInvFisico.Location = New System.Drawing.Point(0, 490)
         Me.BtnInvFisico.Name = "BtnInvFisico"
         Me.BtnInvFisico.Rotation = 0R
-        Me.BtnInvFisico.Size = New System.Drawing.Size(235, 35)
+        Me.BtnInvFisico.Size = New System.Drawing.Size(252, 35)
         Me.BtnInvFisico.TabIndex = 28
         Me.BtnInvFisico.Text = "Inventario Fisico"
         Me.BtnInvFisico.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1195,7 +1195,7 @@ Partial Class FormPrincipal
         Me.IconButton15.Location = New System.Drawing.Point(0, 455)
         Me.IconButton15.Name = "IconButton15"
         Me.IconButton15.Rotation = 0R
-        Me.IconButton15.Size = New System.Drawing.Size(235, 35)
+        Me.IconButton15.Size = New System.Drawing.Size(252, 35)
         Me.IconButton15.TabIndex = 27
         Me.IconButton15.Text = "Pedido de mercancia"
         Me.IconButton15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1221,7 +1221,7 @@ Partial Class FormPrincipal
         Me.IconButton14.Location = New System.Drawing.Point(0, 420)
         Me.IconButton14.Name = "IconButton14"
         Me.IconButton14.Rotation = 0R
-        Me.IconButton14.Size = New System.Drawing.Size(235, 35)
+        Me.IconButton14.Size = New System.Drawing.Size(252, 35)
         Me.IconButton14.TabIndex = 26
         Me.IconButton14.Text = "Traspaso entre almacenes "
         Me.IconButton14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1247,7 +1247,7 @@ Partial Class FormPrincipal
         Me.IconButton13.Location = New System.Drawing.Point(0, 385)
         Me.IconButton13.Name = "IconButton13"
         Me.IconButton13.Rotation = 0R
-        Me.IconButton13.Size = New System.Drawing.Size(235, 35)
+        Me.IconButton13.Size = New System.Drawing.Size(252, 35)
         Me.IconButton13.TabIndex = 25
         Me.IconButton13.Text = "Salida de mercancia"
         Me.IconButton13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1273,7 +1273,7 @@ Partial Class FormPrincipal
         Me.IconButton12.Location = New System.Drawing.Point(0, 350)
         Me.IconButton12.Name = "IconButton12"
         Me.IconButton12.Rotation = 0R
-        Me.IconButton12.Size = New System.Drawing.Size(235, 35)
+        Me.IconButton12.Size = New System.Drawing.Size(252, 35)
         Me.IconButton12.TabIndex = 24
         Me.IconButton12.Text = "Entrada de mercancia"
         Me.IconButton12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1299,7 +1299,7 @@ Partial Class FormPrincipal
         Me.IconButton11.Location = New System.Drawing.Point(0, 315)
         Me.IconButton11.Name = "IconButton11"
         Me.IconButton11.Rotation = 0R
-        Me.IconButton11.Size = New System.Drawing.Size(235, 35)
+        Me.IconButton11.Size = New System.Drawing.Size(252, 35)
         Me.IconButton11.TabIndex = 23
         Me.IconButton11.Text = "Tablajeria"
         Me.IconButton11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1325,7 +1325,7 @@ Partial Class FormPrincipal
         Me.IconButton10.Location = New System.Drawing.Point(0, 280)
         Me.IconButton10.Name = "IconButton10"
         Me.IconButton10.Rotation = 0R
-        Me.IconButton10.Size = New System.Drawing.Size(235, 35)
+        Me.IconButton10.Size = New System.Drawing.Size(252, 35)
         Me.IconButton10.TabIndex = 22
         Me.IconButton10.Text = "Minimos y maximos"
         Me.IconButton10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1351,7 +1351,7 @@ Partial Class FormPrincipal
         Me.IconButton9.Location = New System.Drawing.Point(0, 245)
         Me.IconButton9.Name = "IconButton9"
         Me.IconButton9.Rotation = 0R
-        Me.IconButton9.Size = New System.Drawing.Size(235, 35)
+        Me.IconButton9.Size = New System.Drawing.Size(252, 35)
         Me.IconButton9.TabIndex = 21
         Me.IconButton9.Text = "Productos procesados"
         Me.IconButton9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1377,7 +1377,7 @@ Partial Class FormPrincipal
         Me.IconButton8.Location = New System.Drawing.Point(0, 210)
         Me.IconButton8.Name = "IconButton8"
         Me.IconButton8.Rotation = 0R
-        Me.IconButton8.Size = New System.Drawing.Size(235, 35)
+        Me.IconButton8.Size = New System.Drawing.Size(252, 35)
         Me.IconButton8.TabIndex = 20
         Me.IconButton8.Text = "Escalas de precio"
         Me.IconButton8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1403,7 +1403,7 @@ Partial Class FormPrincipal
         Me.IconButton7.Location = New System.Drawing.Point(0, 175)
         Me.IconButton7.Name = "IconButton7"
         Me.IconButton7.Rotation = 0R
-        Me.IconButton7.Size = New System.Drawing.Size(235, 35)
+        Me.IconButton7.Size = New System.Drawing.Size(252, 35)
         Me.IconButton7.TabIndex = 19
         Me.IconButton7.Text = "Familias y departamentos"
         Me.IconButton7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1429,7 +1429,7 @@ Partial Class FormPrincipal
         Me.IconButton6.Location = New System.Drawing.Point(0, 140)
         Me.IconButton6.Name = "IconButton6"
         Me.IconButton6.Rotation = 0R
-        Me.IconButton6.Size = New System.Drawing.Size(235, 35)
+        Me.IconButton6.Size = New System.Drawing.Size(252, 35)
         Me.IconButton6.TabIndex = 18
         Me.IconButton6.Text = "Verificador de productos"
         Me.IconButton6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1455,7 +1455,7 @@ Partial Class FormPrincipal
         Me.IconButton5.Location = New System.Drawing.Point(0, 105)
         Me.IconButton5.Name = "IconButton5"
         Me.IconButton5.Rotation = 0R
-        Me.IconButton5.Size = New System.Drawing.Size(235, 35)
+        Me.IconButton5.Size = New System.Drawing.Size(252, 35)
         Me.IconButton5.TabIndex = 17
         Me.IconButton5.Text = "Activacion de precios"
         Me.IconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1481,7 +1481,7 @@ Partial Class FormPrincipal
         Me.IconButton4.Location = New System.Drawing.Point(0, 70)
         Me.IconButton4.Name = "IconButton4"
         Me.IconButton4.Rotation = 0R
-        Me.IconButton4.Size = New System.Drawing.Size(235, 35)
+        Me.IconButton4.Size = New System.Drawing.Size(252, 35)
         Me.IconButton4.TabIndex = 16
         Me.IconButton4.Text = "Catalogo de productos"
         Me.IconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1507,7 +1507,7 @@ Partial Class FormPrincipal
         Me.IconButton3.Location = New System.Drawing.Point(0, 35)
         Me.IconButton3.Name = "IconButton3"
         Me.IconButton3.Rotation = 0R
-        Me.IconButton3.Size = New System.Drawing.Size(235, 35)
+        Me.IconButton3.Size = New System.Drawing.Size(252, 35)
         Me.IconButton3.TabIndex = 15
         Me.IconButton3.Text = "Productos"
         Me.IconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1533,7 +1533,7 @@ Partial Class FormPrincipal
         Me.IconButton2.Location = New System.Drawing.Point(0, 0)
         Me.IconButton2.Name = "IconButton2"
         Me.IconButton2.Rotation = 0R
-        Me.IconButton2.Size = New System.Drawing.Size(235, 35)
+        Me.IconButton2.Size = New System.Drawing.Size(252, 35)
         Me.IconButton2.TabIndex = 14
         Me.IconButton2.Text = "Sucursales y almacenes"
         Me.IconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1559,7 +1559,7 @@ Partial Class FormPrincipal
         Me.BtnAlmacen.Location = New System.Drawing.Point(0, 53)
         Me.BtnAlmacen.Name = "BtnAlmacen"
         Me.BtnAlmacen.Rotation = 0R
-        Me.BtnAlmacen.Size = New System.Drawing.Size(235, 43)
+        Me.BtnAlmacen.Size = New System.Drawing.Size(252, 43)
         Me.BtnAlmacen.TabIndex = 10
         Me.BtnAlmacen.Text = "      ALMACEN"
         Me.BtnAlmacen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -1591,7 +1591,7 @@ Partial Class FormPrincipal
         Me.SubMenuVentas.Location = New System.Drawing.Point(0, 43)
         Me.SubMenuVentas.Name = "SubMenuVentas"
         Me.SubMenuVentas.Quality = 10
-        Me.SubMenuVentas.Size = New System.Drawing.Size(235, 10)
+        Me.SubMenuVentas.Size = New System.Drawing.Size(252, 10)
         Me.SubMenuVentas.TabIndex = 3
         Me.SubMenuVentas.Visible = False
         '
@@ -1615,7 +1615,7 @@ Partial Class FormPrincipal
         Me.BtnReporteadorCredCobranza.Location = New System.Drawing.Point(0, 420)
         Me.BtnReporteadorCredCobranza.Name = "BtnReporteadorCredCobranza"
         Me.BtnReporteadorCredCobranza.Rotation = 0R
-        Me.BtnReporteadorCredCobranza.Size = New System.Drawing.Size(235, 35)
+        Me.BtnReporteadorCredCobranza.Size = New System.Drawing.Size(252, 35)
         Me.BtnReporteadorCredCobranza.TabIndex = 13
         Me.BtnReporteadorCredCobranza.Text = "Reporteador de credito y cobranza"
         Me.BtnReporteadorCredCobranza.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1641,7 +1641,7 @@ Partial Class FormPrincipal
         Me.BtnReporteadorRutas.Location = New System.Drawing.Point(0, 385)
         Me.BtnReporteadorRutas.Name = "BtnReporteadorRutas"
         Me.BtnReporteadorRutas.Rotation = 0R
-        Me.BtnReporteadorRutas.Size = New System.Drawing.Size(235, 35)
+        Me.BtnReporteadorRutas.Size = New System.Drawing.Size(252, 35)
         Me.BtnReporteadorRutas.TabIndex = 12
         Me.BtnReporteadorRutas.Text = "Reporteador de rutas"
         Me.BtnReporteadorRutas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1667,7 +1667,7 @@ Partial Class FormPrincipal
         Me.BtnCobranza.Location = New System.Drawing.Point(0, 350)
         Me.BtnCobranza.Name = "BtnCobranza"
         Me.BtnCobranza.Rotation = 0R
-        Me.BtnCobranza.Size = New System.Drawing.Size(235, 35)
+        Me.BtnCobranza.Size = New System.Drawing.Size(252, 35)
         Me.BtnCobranza.TabIndex = 11
         Me.BtnCobranza.Text = "Cobranza"
         Me.BtnCobranza.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1693,7 +1693,7 @@ Partial Class FormPrincipal
         Me.BtnDocumentosClientes.Location = New System.Drawing.Point(0, 315)
         Me.BtnDocumentosClientes.Name = "BtnDocumentosClientes"
         Me.BtnDocumentosClientes.Rotation = 0R
-        Me.BtnDocumentosClientes.Size = New System.Drawing.Size(235, 35)
+        Me.BtnDocumentosClientes.Size = New System.Drawing.Size(252, 35)
         Me.BtnDocumentosClientes.TabIndex = 10
         Me.BtnDocumentosClientes.Text = "Documentos a clientes"
         Me.BtnDocumentosClientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1719,7 +1719,7 @@ Partial Class FormPrincipal
         Me.BtnLiberarCheques.Location = New System.Drawing.Point(0, 280)
         Me.BtnLiberarCheques.Name = "BtnLiberarCheques"
         Me.BtnLiberarCheques.Rotation = 0R
-        Me.BtnLiberarCheques.Size = New System.Drawing.Size(235, 35)
+        Me.BtnLiberarCheques.Size = New System.Drawing.Size(252, 35)
         Me.BtnLiberarCheques.TabIndex = 9
         Me.BtnLiberarCheques.Text = "Liberar cheques"
         Me.BtnLiberarCheques.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1745,7 +1745,7 @@ Partial Class FormPrincipal
         Me.BtnClientes.Location = New System.Drawing.Point(0, 245)
         Me.BtnClientes.Name = "BtnClientes"
         Me.BtnClientes.Rotation = 0R
-        Me.BtnClientes.Size = New System.Drawing.Size(235, 35)
+        Me.BtnClientes.Size = New System.Drawing.Size(252, 35)
         Me.BtnClientes.TabIndex = 8
         Me.BtnClientes.Text = "Clientes"
         Me.BtnClientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1771,7 +1771,7 @@ Partial Class FormPrincipal
         Me.BtnVerOfertas.Location = New System.Drawing.Point(0, 210)
         Me.BtnVerOfertas.Name = "BtnVerOfertas"
         Me.BtnVerOfertas.Rotation = 0R
-        Me.BtnVerOfertas.Size = New System.Drawing.Size(235, 35)
+        Me.BtnVerOfertas.Size = New System.Drawing.Size(252, 35)
         Me.BtnVerOfertas.TabIndex = 7
         Me.BtnVerOfertas.Text = "Ver ofertas"
         Me.BtnVerOfertas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1797,7 +1797,7 @@ Partial Class FormPrincipal
         Me.BtnCrearOfertas.Location = New System.Drawing.Point(0, 175)
         Me.BtnCrearOfertas.Name = "BtnCrearOfertas"
         Me.BtnCrearOfertas.Rotation = 0R
-        Me.BtnCrearOfertas.Size = New System.Drawing.Size(235, 35)
+        Me.BtnCrearOfertas.Size = New System.Drawing.Size(252, 35)
         Me.BtnCrearOfertas.TabIndex = 6
         Me.BtnCrearOfertas.Text = "Crear ofertas"
         Me.BtnCrearOfertas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1823,7 +1823,7 @@ Partial Class FormPrincipal
         Me.BtnOfertas.Location = New System.Drawing.Point(0, 140)
         Me.BtnOfertas.Name = "BtnOfertas"
         Me.BtnOfertas.Rotation = 0R
-        Me.BtnOfertas.Size = New System.Drawing.Size(235, 35)
+        Me.BtnOfertas.Size = New System.Drawing.Size(252, 35)
         Me.BtnOfertas.TabIndex = 5
         Me.BtnOfertas.Text = "Ofertas"
         Me.BtnOfertas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1849,7 +1849,7 @@ Partial Class FormPrincipal
         Me.BtnRuta_Cliente.Location = New System.Drawing.Point(0, 105)
         Me.BtnRuta_Cliente.Name = "BtnRuta_Cliente"
         Me.BtnRuta_Cliente.Rotation = 0R
-        Me.BtnRuta_Cliente.Size = New System.Drawing.Size(235, 35)
+        Me.BtnRuta_Cliente.Size = New System.Drawing.Size(252, 35)
         Me.BtnRuta_Cliente.TabIndex = 4
         Me.BtnRuta_Cliente.Text = "Ruta-Cliente"
         Me.BtnRuta_Cliente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1875,7 +1875,7 @@ Partial Class FormPrincipal
         Me.BtnVendedores.Location = New System.Drawing.Point(0, 70)
         Me.BtnVendedores.Name = "BtnVendedores"
         Me.BtnVendedores.Rotation = 0R
-        Me.BtnVendedores.Size = New System.Drawing.Size(235, 35)
+        Me.BtnVendedores.Size = New System.Drawing.Size(252, 35)
         Me.BtnVendedores.TabIndex = 3
         Me.BtnVendedores.Text = "Vendedores"
         Me.BtnVendedores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1901,7 +1901,7 @@ Partial Class FormPrincipal
         Me.BtnFacComandas.Location = New System.Drawing.Point(0, 35)
         Me.BtnFacComandas.Name = "BtnFacComandas"
         Me.BtnFacComandas.Rotation = 0R
-        Me.BtnFacComandas.Size = New System.Drawing.Size(235, 35)
+        Me.BtnFacComandas.Size = New System.Drawing.Size(252, 35)
         Me.BtnFacComandas.TabIndex = 2
         Me.BtnFacComandas.Text = "Facturacion de comandas de PG"
         Me.BtnFacComandas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1927,7 +1927,7 @@ Partial Class FormPrincipal
         Me.BtnFacRutas.Location = New System.Drawing.Point(0, 0)
         Me.BtnFacRutas.Name = "BtnFacRutas"
         Me.BtnFacRutas.Rotation = 0R
-        Me.BtnFacRutas.Size = New System.Drawing.Size(235, 35)
+        Me.BtnFacRutas.Size = New System.Drawing.Size(252, 35)
         Me.BtnFacRutas.TabIndex = 1
         Me.BtnFacRutas.Text = "Facturacion de rutas"
         Me.BtnFacRutas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1953,7 +1953,7 @@ Partial Class FormPrincipal
         Me.BtnVentas.Location = New System.Drawing.Point(0, 0)
         Me.BtnVentas.Name = "BtnVentas"
         Me.BtnVentas.Rotation = 0R
-        Me.BtnVentas.Size = New System.Drawing.Size(235, 43)
+        Me.BtnVentas.Size = New System.Drawing.Size(252, 43)
         Me.BtnVentas.TabIndex = 6
         Me.BtnVentas.Text = "      VENTAS"
         Me.BtnVentas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -1963,22 +1963,22 @@ Partial Class FormPrincipal
         '
         Me.SubMenuTransition.AnimationType = BunifuAnimatorNS.AnimationType.VertBlind
         Me.SubMenuTransition.Cursor = Nothing
-        Animation1.AnimateOnlyDifferences = True
-        Animation1.BlindCoeff = CType(resources.GetObject("Animation1.BlindCoeff"), System.Drawing.PointF)
-        Animation1.LeafCoeff = 0!
-        Animation1.MaxTime = 1.0!
-        Animation1.MinTime = 0!
-        Animation1.MosaicCoeff = CType(resources.GetObject("Animation1.MosaicCoeff"), System.Drawing.PointF)
-        Animation1.MosaicShift = CType(resources.GetObject("Animation1.MosaicShift"), System.Drawing.PointF)
-        Animation1.MosaicSize = 0
-        Animation1.Padding = New System.Windows.Forms.Padding(0)
-        Animation1.RotateCoeff = 0!
-        Animation1.RotateLimit = 0!
-        Animation1.ScaleCoeff = CType(resources.GetObject("Animation1.ScaleCoeff"), System.Drawing.PointF)
-        Animation1.SlideCoeff = CType(resources.GetObject("Animation1.SlideCoeff"), System.Drawing.PointF)
-        Animation1.TimeCoeff = 0!
-        Animation1.TransparencyCoeff = 0!
-        Me.SubMenuTransition.DefaultAnimation = Animation1
+        Animation2.AnimateOnlyDifferences = True
+        Animation2.BlindCoeff = CType(resources.GetObject("Animation2.BlindCoeff"), System.Drawing.PointF)
+        Animation2.LeafCoeff = 0!
+        Animation2.MaxTime = 1.0!
+        Animation2.MinTime = 0!
+        Animation2.MosaicCoeff = CType(resources.GetObject("Animation2.MosaicCoeff"), System.Drawing.PointF)
+        Animation2.MosaicShift = CType(resources.GetObject("Animation2.MosaicShift"), System.Drawing.PointF)
+        Animation2.MosaicSize = 0
+        Animation2.Padding = New System.Windows.Forms.Padding(0)
+        Animation2.RotateCoeff = 0!
+        Animation2.RotateLimit = 0!
+        Animation2.ScaleCoeff = CType(resources.GetObject("Animation2.ScaleCoeff"), System.Drawing.PointF)
+        Animation2.SlideCoeff = CType(resources.GetObject("Animation2.SlideCoeff"), System.Drawing.PointF)
+        Animation2.TimeCoeff = 0!
+        Animation2.TransparencyCoeff = 0!
+        Me.SubMenuTransition.DefaultAnimation = Animation2
         '
         'PanelFormularios
         '
@@ -1987,7 +1987,7 @@ Partial Class FormPrincipal
         Me.PanelFormularios.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PanelFormularios.Location = New System.Drawing.Point(266, 38)
         Me.PanelFormularios.Name = "PanelFormularios"
-        Me.PanelFormularios.Size = New System.Drawing.Size(1018, 750)
+        Me.PanelFormularios.Size = New System.Drawing.Size(934, 662)
         Me.PanelFormularios.TabIndex = 3
         '
         'BunifuGradientPanel1
@@ -2004,7 +2004,7 @@ Partial Class FormPrincipal
         Me.BunifuGradientPanel1.Location = New System.Drawing.Point(0, 0)
         Me.BunifuGradientPanel1.Name = "BunifuGradientPanel1"
         Me.BunifuGradientPanel1.Quality = 10
-        Me.BunifuGradientPanel1.Size = New System.Drawing.Size(1018, 40)
+        Me.BunifuGradientPanel1.Size = New System.Drawing.Size(934, 40)
         Me.BunifuGradientPanel1.TabIndex = 0
         '
         'IconButton1
@@ -2036,7 +2036,7 @@ Partial Class FormPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1284, 788)
+        Me.ClientSize = New System.Drawing.Size(1200, 700)
         Me.Controls.Add(Me.PanelFormularios)
         Me.Controls.Add(Me.SideBar)
         Me.Controls.Add(Me.BarraTitulo)
