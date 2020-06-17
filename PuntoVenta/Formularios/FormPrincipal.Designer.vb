@@ -23,8 +23,8 @@ Partial Class FormPrincipal
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim Animation1 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormPrincipal))
-        Dim Animation2 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Me.BarraTitulo = New System.Windows.Forms.Panel()
         Me.RestoreWindow = New System.Windows.Forms.PictureBox()
         Me.MinimizeWindow = New System.Windows.Forms.PictureBox()
@@ -62,27 +62,26 @@ Partial Class FormPrincipal
         Me.BtnComprasMenu = New FontAwesome.Sharp.IconButton()
         Me.BtnCompras = New FontAwesome.Sharp.IconButton()
         Me.SubMenuAlmacen = New Bunifu.Framework.UI.BunifuGradientPanel()
-        Me.IconButton19 = New FontAwesome.Sharp.IconButton()
-        Me.IconButton18 = New FontAwesome.Sharp.IconButton()
-        Me.IconButton17 = New FontAwesome.Sharp.IconButton()
-        Me.IconButton16 = New FontAwesome.Sharp.IconButton()
+        Me.BtnReporteador = New FontAwesome.Sharp.IconButton()
+        Me.BtnConversiones = New FontAwesome.Sharp.IconButton()
+        Me.BtnConceptos = New FontAwesome.Sharp.IconButton()
+        Me.BtnNotificaciones = New FontAwesome.Sharp.IconButton()
         Me.BtnActualizacionInv = New FontAwesome.Sharp.IconButton()
-        Me.BtnInvSelectivo = New FontAwesome.Sharp.IconButton()
         Me.BtnInvFisico = New FontAwesome.Sharp.IconButton()
-        Me.IconButton15 = New FontAwesome.Sharp.IconButton()
-        Me.IconButton14 = New FontAwesome.Sharp.IconButton()
-        Me.IconButton13 = New FontAwesome.Sharp.IconButton()
-        Me.IconButton12 = New FontAwesome.Sharp.IconButton()
-        Me.IconButton11 = New FontAwesome.Sharp.IconButton()
-        Me.IconButton10 = New FontAwesome.Sharp.IconButton()
-        Me.IconButton9 = New FontAwesome.Sharp.IconButton()
-        Me.IconButton8 = New FontAwesome.Sharp.IconButton()
-        Me.IconButton7 = New FontAwesome.Sharp.IconButton()
-        Me.IconButton6 = New FontAwesome.Sharp.IconButton()
-        Me.IconButton5 = New FontAwesome.Sharp.IconButton()
-        Me.IconButton4 = New FontAwesome.Sharp.IconButton()
-        Me.IconButton3 = New FontAwesome.Sharp.IconButton()
-        Me.IconButton2 = New FontAwesome.Sharp.IconButton()
+        Me.BtnPedidoMercancia = New FontAwesome.Sharp.IconButton()
+        Me.BtnTraspasosEAlmacenes = New FontAwesome.Sharp.IconButton()
+        Me.SalidaMercancia = New FontAwesome.Sharp.IconButton()
+        Me.BtnEntradasMercancia = New FontAwesome.Sharp.IconButton()
+        Me.BtnTablajeria = New FontAwesome.Sharp.IconButton()
+        Me.BtnMinMax = New FontAwesome.Sharp.IconButton()
+        Me.BtnProductosProcesados = New FontAwesome.Sharp.IconButton()
+        Me.BtnEscalasPrecio = New FontAwesome.Sharp.IconButton()
+        Me.BtnFamYDepartamentos = New FontAwesome.Sharp.IconButton()
+        Me.BtnVerificadorProductos = New FontAwesome.Sharp.IconButton()
+        Me.BtnActivacionPrecios = New FontAwesome.Sharp.IconButton()
+        Me.BtnCatalogoProductos = New FontAwesome.Sharp.IconButton()
+        Me.BtnProductos = New FontAwesome.Sharp.IconButton()
+        Me.BtnSucursalesYAlmacenes = New FontAwesome.Sharp.IconButton()
         Me.BtnAlmacen = New FontAwesome.Sharp.IconButton()
         Me.SubMenuVentas = New Bunifu.Framework.UI.BunifuGradientPanel()
         Me.BtnReporteadorCredCobranza = New FontAwesome.Sharp.IconButton()
@@ -272,10 +271,10 @@ Partial Class FormPrincipal
         Me.SubMenuRegistro.GradientBottomRight = System.Drawing.Color.Teal
         Me.SubMenuRegistro.GradientTopLeft = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.SubMenuRegistro.GradientTopRight = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.SubMenuRegistro.Location = New System.Drawing.Point(0, 202)
+        Me.SubMenuRegistro.Location = New System.Drawing.Point(0, 892)
         Me.SubMenuRegistro.Name = "SubMenuRegistro"
         Me.SubMenuRegistro.Quality = 10
-        Me.SubMenuRegistro.Size = New System.Drawing.Size(252, 10)
+        Me.SubMenuRegistro.Size = New System.Drawing.Size(235, 10)
         Me.SubMenuRegistro.TabIndex = 16
         Me.SubMenuRegistro.Visible = False
         '
@@ -299,7 +298,7 @@ Partial Class FormPrincipal
         Me.IconButton34.Location = New System.Drawing.Point(0, 455)
         Me.IconButton34.Name = "IconButton34"
         Me.IconButton34.Rotation = 0R
-        Me.IconButton34.Size = New System.Drawing.Size(252, 35)
+        Me.IconButton34.Size = New System.Drawing.Size(235, 35)
         Me.IconButton34.TabIndex = 14
         Me.IconButton34.Text = "Reporteador de cajas"
         Me.IconButton34.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -325,7 +324,7 @@ Partial Class FormPrincipal
         Me.IconButton33.Location = New System.Drawing.Point(0, 420)
         Me.IconButton33.Name = "IconButton33"
         Me.IconButton33.Rotation = 0R
-        Me.IconButton33.Size = New System.Drawing.Size(252, 35)
+        Me.IconButton33.Size = New System.Drawing.Size(235, 35)
         Me.IconButton33.TabIndex = 13
         Me.IconButton33.Text = "Actualizacion de ventas"
         Me.IconButton33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -351,7 +350,7 @@ Partial Class FormPrincipal
         Me.IconButton32.Location = New System.Drawing.Point(0, 385)
         Me.IconButton32.Name = "IconButton32"
         Me.IconButton32.Rotation = 0R
-        Me.IconButton32.Size = New System.Drawing.Size(252, 35)
+        Me.IconButton32.Size = New System.Drawing.Size(235, 35)
         Me.IconButton32.TabIndex = 12
         Me.IconButton32.Text = "Consolidacion de ventas"
         Me.IconButton32.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -377,7 +376,7 @@ Partial Class FormPrincipal
         Me.IconButton31.Location = New System.Drawing.Point(0, 350)
         Me.IconButton31.Name = "IconButton31"
         Me.IconButton31.Rotation = 0R
-        Me.IconButton31.Size = New System.Drawing.Size(252, 35)
+        Me.IconButton31.Size = New System.Drawing.Size(235, 35)
         Me.IconButton31.TabIndex = 11
         Me.IconButton31.Text = "Devoluciones"
         Me.IconButton31.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -403,7 +402,7 @@ Partial Class FormPrincipal
         Me.IconButton30.Location = New System.Drawing.Point(0, 315)
         Me.IconButton30.Name = "IconButton30"
         Me.IconButton30.Rotation = 0R
-        Me.IconButton30.Size = New System.Drawing.Size(252, 35)
+        Me.IconButton30.Size = New System.Drawing.Size(235, 35)
         Me.IconButton30.TabIndex = 10
         Me.IconButton30.Text = "Sobrante de cajas"
         Me.IconButton30.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -429,7 +428,7 @@ Partial Class FormPrincipal
         Me.IconButton21.Location = New System.Drawing.Point(0, 280)
         Me.IconButton21.Name = "IconButton21"
         Me.IconButton21.Rotation = 0R
-        Me.IconButton21.Size = New System.Drawing.Size(252, 35)
+        Me.IconButton21.Size = New System.Drawing.Size(235, 35)
         Me.IconButton21.TabIndex = 9
         Me.IconButton21.Text = "Depositos de rutas"
         Me.IconButton21.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -455,7 +454,7 @@ Partial Class FormPrincipal
         Me.IconButton22.Location = New System.Drawing.Point(0, 245)
         Me.IconButton22.Name = "IconButton22"
         Me.IconButton22.Rotation = 0R
-        Me.IconButton22.Size = New System.Drawing.Size(252, 35)
+        Me.IconButton22.Size = New System.Drawing.Size(235, 35)
         Me.IconButton22.TabIndex = 8
         Me.IconButton22.Text = "Depositos"
         Me.IconButton22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -481,7 +480,7 @@ Partial Class FormPrincipal
         Me.IconButton23.Location = New System.Drawing.Point(0, 210)
         Me.IconButton23.Name = "IconButton23"
         Me.IconButton23.Rotation = 0R
-        Me.IconButton23.Size = New System.Drawing.Size(252, 35)
+        Me.IconButton23.Size = New System.Drawing.Size(235, 35)
         Me.IconButton23.TabIndex = 7
         Me.IconButton23.Text = "Captura de cheques y tarjetas"
         Me.IconButton23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -507,7 +506,7 @@ Partial Class FormPrincipal
         Me.IconButton24.Location = New System.Drawing.Point(0, 175)
         Me.IconButton24.Name = "IconButton24"
         Me.IconButton24.Rotation = 0R
-        Me.IconButton24.Size = New System.Drawing.Size(252, 35)
+        Me.IconButton24.Size = New System.Drawing.Size(235, 35)
         Me.IconButton24.TabIndex = 6
         Me.IconButton24.Text = "Cajeros"
         Me.IconButton24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -533,7 +532,7 @@ Partial Class FormPrincipal
         Me.IconButton25.Location = New System.Drawing.Point(0, 140)
         Me.IconButton25.Name = "IconButton25"
         Me.IconButton25.Rotation = 0R
-        Me.IconButton25.Size = New System.Drawing.Size(252, 35)
+        Me.IconButton25.Size = New System.Drawing.Size(235, 35)
         Me.IconButton25.TabIndex = 5
         Me.IconButton25.Text = "Etiquetas"
         Me.IconButton25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -559,7 +558,7 @@ Partial Class FormPrincipal
         Me.IconButton26.Location = New System.Drawing.Point(0, 105)
         Me.IconButton26.Name = "IconButton26"
         Me.IconButton26.Rotation = 0R
-        Me.IconButton26.Size = New System.Drawing.Size(252, 35)
+        Me.IconButton26.Size = New System.Drawing.Size(235, 35)
         Me.IconButton26.TabIndex = 4
         Me.IconButton26.Text = "Checador de precios"
         Me.IconButton26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -585,7 +584,7 @@ Partial Class FormPrincipal
         Me.IconButton27.Location = New System.Drawing.Point(0, 70)
         Me.IconButton27.Name = "IconButton27"
         Me.IconButton27.Rotation = 0R
-        Me.IconButton27.Size = New System.Drawing.Size(252, 35)
+        Me.IconButton27.Size = New System.Drawing.Size(235, 35)
         Me.IconButton27.TabIndex = 3
         Me.IconButton27.Text = "Cancelacion de facturas"
         Me.IconButton27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -611,7 +610,7 @@ Partial Class FormPrincipal
         Me.IconButton28.Location = New System.Drawing.Point(0, 35)
         Me.IconButton28.Name = "IconButton28"
         Me.IconButton28.Rotation = 0R
-        Me.IconButton28.Size = New System.Drawing.Size(252, 35)
+        Me.IconButton28.Size = New System.Drawing.Size(235, 35)
         Me.IconButton28.TabIndex = 2
         Me.IconButton28.Text = "Facturacion de varios recibos"
         Me.IconButton28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -637,7 +636,7 @@ Partial Class FormPrincipal
         Me.IconButton29.Location = New System.Drawing.Point(0, 0)
         Me.IconButton29.Name = "IconButton29"
         Me.IconButton29.Rotation = 0R
-        Me.IconButton29.Size = New System.Drawing.Size(252, 35)
+        Me.IconButton29.Size = New System.Drawing.Size(235, 35)
         Me.IconButton29.TabIndex = 1
         Me.IconButton29.Text = "Factura general del dia"
         Me.IconButton29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -660,10 +659,10 @@ Partial Class FormPrincipal
         Me.IconButton20.IconColor = System.Drawing.Color.White
         Me.IconButton20.IconSize = 32
         Me.IconButton20.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton20.Location = New System.Drawing.Point(0, 159)
+        Me.IconButton20.Location = New System.Drawing.Point(0, 849)
         Me.IconButton20.Name = "IconButton20"
         Me.IconButton20.Rotation = 0R
-        Me.IconButton20.Size = New System.Drawing.Size(252, 43)
+        Me.IconButton20.Size = New System.Drawing.Size(235, 43)
         Me.IconButton20.TabIndex = 15
         Me.IconButton20.Text = "      Registro"
         Me.IconButton20.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -688,10 +687,10 @@ Partial Class FormPrincipal
         Me.SubMenuCompra.GradientBottomRight = System.Drawing.Color.Teal
         Me.SubMenuCompra.GradientTopLeft = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.SubMenuCompra.GradientTopRight = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.SubMenuCompra.Location = New System.Drawing.Point(0, 149)
+        Me.SubMenuCompra.Location = New System.Drawing.Point(0, 839)
         Me.SubMenuCompra.Name = "SubMenuCompra"
         Me.SubMenuCompra.Quality = 10
-        Me.SubMenuCompra.Size = New System.Drawing.Size(252, 10)
+        Me.SubMenuCompra.Size = New System.Drawing.Size(235, 10)
         Me.SubMenuCompra.TabIndex = 14
         Me.SubMenuCompra.Visible = False
         '
@@ -715,7 +714,7 @@ Partial Class FormPrincipal
         Me.BtnReporteadorCompras.Location = New System.Drawing.Point(0, 280)
         Me.BtnReporteadorCompras.Name = "BtnReporteadorCompras"
         Me.BtnReporteadorCompras.Rotation = 0R
-        Me.BtnReporteadorCompras.Size = New System.Drawing.Size(252, 35)
+        Me.BtnReporteadorCompras.Size = New System.Drawing.Size(235, 35)
         Me.BtnReporteadorCompras.TabIndex = 9
         Me.BtnReporteadorCompras.Text = "Reporteador de Compras"
         Me.BtnReporteadorCompras.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -741,7 +740,7 @@ Partial Class FormPrincipal
         Me.BtnNotaCargoxFaltante.Location = New System.Drawing.Point(0, 245)
         Me.BtnNotaCargoxFaltante.Name = "BtnNotaCargoxFaltante"
         Me.BtnNotaCargoxFaltante.Rotation = 0R
-        Me.BtnNotaCargoxFaltante.Size = New System.Drawing.Size(252, 35)
+        Me.BtnNotaCargoxFaltante.Size = New System.Drawing.Size(235, 35)
         Me.BtnNotaCargoxFaltante.TabIndex = 8
         Me.BtnNotaCargoxFaltante.Text = "Nota de cargo por faltante"
         Me.BtnNotaCargoxFaltante.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -767,7 +766,7 @@ Partial Class FormPrincipal
         Me.BtnNotasCredito.Location = New System.Drawing.Point(0, 210)
         Me.BtnNotasCredito.Name = "BtnNotasCredito"
         Me.BtnNotasCredito.Rotation = 0R
-        Me.BtnNotasCredito.Size = New System.Drawing.Size(252, 35)
+        Me.BtnNotasCredito.Size = New System.Drawing.Size(235, 35)
         Me.BtnNotasCredito.TabIndex = 7
         Me.BtnNotasCredito.Text = "Notas de Credito"
         Me.BtnNotasCredito.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -793,7 +792,7 @@ Partial Class FormPrincipal
         Me.BtnProveedores.Location = New System.Drawing.Point(0, 175)
         Me.BtnProveedores.Name = "BtnProveedores"
         Me.BtnProveedores.Rotation = 0R
-        Me.BtnProveedores.Size = New System.Drawing.Size(252, 35)
+        Me.BtnProveedores.Size = New System.Drawing.Size(235, 35)
         Me.BtnProveedores.TabIndex = 6
         Me.BtnProveedores.Text = "Proveedores"
         Me.BtnProveedores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -819,7 +818,7 @@ Partial Class FormPrincipal
         Me.BtnCatalogoPrecios.Location = New System.Drawing.Point(0, 140)
         Me.BtnCatalogoPrecios.Name = "BtnCatalogoPrecios"
         Me.BtnCatalogoPrecios.Rotation = 0R
-        Me.BtnCatalogoPrecios.Size = New System.Drawing.Size(252, 35)
+        Me.BtnCatalogoPrecios.Size = New System.Drawing.Size(235, 35)
         Me.BtnCatalogoPrecios.TabIndex = 5
         Me.BtnCatalogoPrecios.Text = "Catalogo de precios"
         Me.BtnCatalogoPrecios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -845,7 +844,7 @@ Partial Class FormPrincipal
         Me.BtnAnalisisOrden.Location = New System.Drawing.Point(0, 105)
         Me.BtnAnalisisOrden.Name = "BtnAnalisisOrden"
         Me.BtnAnalisisOrden.Rotation = 0R
-        Me.BtnAnalisisOrden.Size = New System.Drawing.Size(252, 35)
+        Me.BtnAnalisisOrden.Size = New System.Drawing.Size(235, 35)
         Me.BtnAnalisisOrden.TabIndex = 4
         Me.BtnAnalisisOrden.Text = "Analisis Ordenes de Compra"
         Me.BtnAnalisisOrden.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -871,7 +870,7 @@ Partial Class FormPrincipal
         Me.BtnContra_recibo.Location = New System.Drawing.Point(0, 70)
         Me.BtnContra_recibo.Name = "BtnContra_recibo"
         Me.BtnContra_recibo.Rotation = 0R
-        Me.BtnContra_recibo.Size = New System.Drawing.Size(252, 35)
+        Me.BtnContra_recibo.Size = New System.Drawing.Size(235, 35)
         Me.BtnContra_recibo.TabIndex = 3
         Me.BtnContra_recibo.Text = "Contra-Recibos"
         Me.BtnContra_recibo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -897,7 +896,7 @@ Partial Class FormPrincipal
         Me.BtnOrdenCompra.Location = New System.Drawing.Point(0, 35)
         Me.BtnOrdenCompra.Name = "BtnOrdenCompra"
         Me.BtnOrdenCompra.Rotation = 0R
-        Me.BtnOrdenCompra.Size = New System.Drawing.Size(252, 35)
+        Me.BtnOrdenCompra.Size = New System.Drawing.Size(235, 35)
         Me.BtnOrdenCompra.TabIndex = 2
         Me.BtnOrdenCompra.Text = "Orden de compra"
         Me.BtnOrdenCompra.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -923,7 +922,7 @@ Partial Class FormPrincipal
         Me.BtnComprasMenu.Location = New System.Drawing.Point(0, 0)
         Me.BtnComprasMenu.Name = "BtnComprasMenu"
         Me.BtnComprasMenu.Rotation = 0R
-        Me.BtnComprasMenu.Size = New System.Drawing.Size(252, 35)
+        Me.BtnComprasMenu.Size = New System.Drawing.Size(235, 35)
         Me.BtnComprasMenu.TabIndex = 1
         Me.BtnComprasMenu.Text = "Compras"
         Me.BtnComprasMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -946,10 +945,10 @@ Partial Class FormPrincipal
         Me.BtnCompras.IconColor = System.Drawing.Color.White
         Me.BtnCompras.IconSize = 32
         Me.BtnCompras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnCompras.Location = New System.Drawing.Point(0, 106)
+        Me.BtnCompras.Location = New System.Drawing.Point(0, 796)
         Me.BtnCompras.Name = "BtnCompras"
         Me.BtnCompras.Rotation = 0R
-        Me.BtnCompras.Size = New System.Drawing.Size(252, 43)
+        Me.BtnCompras.Size = New System.Drawing.Size(235, 43)
         Me.BtnCompras.TabIndex = 13
         Me.BtnCompras.Text = "      Compras"
         Me.BtnCompras.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -959,27 +958,26 @@ Partial Class FormPrincipal
         '
         Me.SubMenuAlmacen.BackgroundImage = CType(resources.GetObject("SubMenuAlmacen.BackgroundImage"), System.Drawing.Image)
         Me.SubMenuAlmacen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.SubMenuAlmacen.Controls.Add(Me.IconButton19)
-        Me.SubMenuAlmacen.Controls.Add(Me.IconButton18)
-        Me.SubMenuAlmacen.Controls.Add(Me.IconButton17)
-        Me.SubMenuAlmacen.Controls.Add(Me.IconButton16)
+        Me.SubMenuAlmacen.Controls.Add(Me.BtnReporteador)
+        Me.SubMenuAlmacen.Controls.Add(Me.BtnConversiones)
+        Me.SubMenuAlmacen.Controls.Add(Me.BtnConceptos)
+        Me.SubMenuAlmacen.Controls.Add(Me.BtnNotificaciones)
         Me.SubMenuAlmacen.Controls.Add(Me.BtnActualizacionInv)
-        Me.SubMenuAlmacen.Controls.Add(Me.BtnInvSelectivo)
         Me.SubMenuAlmacen.Controls.Add(Me.BtnInvFisico)
-        Me.SubMenuAlmacen.Controls.Add(Me.IconButton15)
-        Me.SubMenuAlmacen.Controls.Add(Me.IconButton14)
-        Me.SubMenuAlmacen.Controls.Add(Me.IconButton13)
-        Me.SubMenuAlmacen.Controls.Add(Me.IconButton12)
-        Me.SubMenuAlmacen.Controls.Add(Me.IconButton11)
-        Me.SubMenuAlmacen.Controls.Add(Me.IconButton10)
-        Me.SubMenuAlmacen.Controls.Add(Me.IconButton9)
-        Me.SubMenuAlmacen.Controls.Add(Me.IconButton8)
-        Me.SubMenuAlmacen.Controls.Add(Me.IconButton7)
-        Me.SubMenuAlmacen.Controls.Add(Me.IconButton6)
-        Me.SubMenuAlmacen.Controls.Add(Me.IconButton5)
-        Me.SubMenuAlmacen.Controls.Add(Me.IconButton4)
-        Me.SubMenuAlmacen.Controls.Add(Me.IconButton3)
-        Me.SubMenuAlmacen.Controls.Add(Me.IconButton2)
+        Me.SubMenuAlmacen.Controls.Add(Me.BtnPedidoMercancia)
+        Me.SubMenuAlmacen.Controls.Add(Me.BtnTraspasosEAlmacenes)
+        Me.SubMenuAlmacen.Controls.Add(Me.SalidaMercancia)
+        Me.SubMenuAlmacen.Controls.Add(Me.BtnEntradasMercancia)
+        Me.SubMenuAlmacen.Controls.Add(Me.BtnTablajeria)
+        Me.SubMenuAlmacen.Controls.Add(Me.BtnMinMax)
+        Me.SubMenuAlmacen.Controls.Add(Me.BtnProductosProcesados)
+        Me.SubMenuAlmacen.Controls.Add(Me.BtnEscalasPrecio)
+        Me.SubMenuAlmacen.Controls.Add(Me.BtnFamYDepartamentos)
+        Me.SubMenuAlmacen.Controls.Add(Me.BtnVerificadorProductos)
+        Me.SubMenuAlmacen.Controls.Add(Me.BtnActivacionPrecios)
+        Me.SubMenuAlmacen.Controls.Add(Me.BtnCatalogoProductos)
+        Me.SubMenuAlmacen.Controls.Add(Me.BtnProductos)
+        Me.SubMenuAlmacen.Controls.Add(Me.BtnSucursalesYAlmacenes)
         Me.SubMenuTransition.SetDecoration(Me.SubMenuAlmacen, BunifuAnimatorNS.DecorationType.None)
         Me.SubMenuAlmacen.Dock = System.Windows.Forms.DockStyle.Top
         Me.SubMenuAlmacen.GradientBottomLeft = System.Drawing.Color.Teal
@@ -989,113 +987,113 @@ Partial Class FormPrincipal
         Me.SubMenuAlmacen.Location = New System.Drawing.Point(0, 96)
         Me.SubMenuAlmacen.Name = "SubMenuAlmacen"
         Me.SubMenuAlmacen.Quality = 10
-        Me.SubMenuAlmacen.Size = New System.Drawing.Size(252, 10)
+        Me.SubMenuAlmacen.Size = New System.Drawing.Size(235, 700)
         Me.SubMenuAlmacen.TabIndex = 11
         Me.SubMenuAlmacen.Visible = False
         '
-        'IconButton19
+        'BtnReporteador
         '
-        Me.IconButton19.BackColor = System.Drawing.Color.Transparent
-        Me.IconButton19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.SubMenuTransition.SetDecoration(Me.IconButton19, BunifuAnimatorNS.DecorationType.None)
-        Me.IconButton19.Dock = System.Windows.Forms.DockStyle.Top
-        Me.IconButton19.FlatAppearance.BorderSize = 0
-        Me.IconButton19.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.IconButton19.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.IconButton19.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton19.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.IconButton19.Font = New System.Drawing.Font("Poppins", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IconButton19.ForeColor = System.Drawing.Color.White
-        Me.IconButton19.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.IconButton19.IconColor = System.Drawing.Color.White
-        Me.IconButton19.IconSize = 32
-        Me.IconButton19.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton19.Location = New System.Drawing.Point(0, 700)
-        Me.IconButton19.Name = "IconButton19"
-        Me.IconButton19.Rotation = 0R
-        Me.IconButton19.Size = New System.Drawing.Size(252, 35)
-        Me.IconButton19.TabIndex = 34
-        Me.IconButton19.Text = "Reporteador almacen"
-        Me.IconButton19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton19.UseVisualStyleBackColor = False
+        Me.BtnReporteador.BackColor = System.Drawing.Color.Transparent
+        Me.BtnReporteador.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.SubMenuTransition.SetDecoration(Me.BtnReporteador, BunifuAnimatorNS.DecorationType.None)
+        Me.BtnReporteador.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnReporteador.FlatAppearance.BorderSize = 0
+        Me.BtnReporteador.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.BtnReporteador.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.BtnReporteador.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnReporteador.Flip = FontAwesome.Sharp.FlipOrientation.Normal
+        Me.BtnReporteador.Font = New System.Drawing.Font("Poppins", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnReporteador.ForeColor = System.Drawing.Color.White
+        Me.BtnReporteador.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.BtnReporteador.IconColor = System.Drawing.Color.White
+        Me.BtnReporteador.IconSize = 32
+        Me.BtnReporteador.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnReporteador.Location = New System.Drawing.Point(0, 665)
+        Me.BtnReporteador.Name = "BtnReporteador"
+        Me.BtnReporteador.Rotation = 0R
+        Me.BtnReporteador.Size = New System.Drawing.Size(235, 35)
+        Me.BtnReporteador.TabIndex = 34
+        Me.BtnReporteador.Text = "Reporteador almacen"
+        Me.BtnReporteador.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnReporteador.UseVisualStyleBackColor = False
         '
-        'IconButton18
+        'BtnConversiones
         '
-        Me.IconButton18.BackColor = System.Drawing.Color.Transparent
-        Me.IconButton18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.SubMenuTransition.SetDecoration(Me.IconButton18, BunifuAnimatorNS.DecorationType.None)
-        Me.IconButton18.Dock = System.Windows.Forms.DockStyle.Top
-        Me.IconButton18.FlatAppearance.BorderSize = 0
-        Me.IconButton18.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.IconButton18.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.IconButton18.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton18.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.IconButton18.Font = New System.Drawing.Font("Poppins", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IconButton18.ForeColor = System.Drawing.Color.White
-        Me.IconButton18.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.IconButton18.IconColor = System.Drawing.Color.White
-        Me.IconButton18.IconSize = 32
-        Me.IconButton18.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton18.Location = New System.Drawing.Point(0, 665)
-        Me.IconButton18.Name = "IconButton18"
-        Me.IconButton18.Rotation = 0R
-        Me.IconButton18.Size = New System.Drawing.Size(252, 35)
-        Me.IconButton18.TabIndex = 33
-        Me.IconButton18.Text = "Conversiones"
-        Me.IconButton18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton18.UseVisualStyleBackColor = False
+        Me.BtnConversiones.BackColor = System.Drawing.Color.Transparent
+        Me.BtnConversiones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.SubMenuTransition.SetDecoration(Me.BtnConversiones, BunifuAnimatorNS.DecorationType.None)
+        Me.BtnConversiones.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnConversiones.FlatAppearance.BorderSize = 0
+        Me.BtnConversiones.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.BtnConversiones.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.BtnConversiones.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnConversiones.Flip = FontAwesome.Sharp.FlipOrientation.Normal
+        Me.BtnConversiones.Font = New System.Drawing.Font("Poppins", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnConversiones.ForeColor = System.Drawing.Color.White
+        Me.BtnConversiones.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.BtnConversiones.IconColor = System.Drawing.Color.White
+        Me.BtnConversiones.IconSize = 32
+        Me.BtnConversiones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnConversiones.Location = New System.Drawing.Point(0, 630)
+        Me.BtnConversiones.Name = "BtnConversiones"
+        Me.BtnConversiones.Rotation = 0R
+        Me.BtnConversiones.Size = New System.Drawing.Size(235, 35)
+        Me.BtnConversiones.TabIndex = 33
+        Me.BtnConversiones.Text = "Conversiones"
+        Me.BtnConversiones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnConversiones.UseVisualStyleBackColor = False
         '
-        'IconButton17
+        'BtnConceptos
         '
-        Me.IconButton17.BackColor = System.Drawing.Color.Transparent
-        Me.IconButton17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.SubMenuTransition.SetDecoration(Me.IconButton17, BunifuAnimatorNS.DecorationType.None)
-        Me.IconButton17.Dock = System.Windows.Forms.DockStyle.Top
-        Me.IconButton17.FlatAppearance.BorderSize = 0
-        Me.IconButton17.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.IconButton17.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.IconButton17.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton17.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.IconButton17.Font = New System.Drawing.Font("Poppins", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IconButton17.ForeColor = System.Drawing.Color.White
-        Me.IconButton17.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.IconButton17.IconColor = System.Drawing.Color.White
-        Me.IconButton17.IconSize = 32
-        Me.IconButton17.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton17.Location = New System.Drawing.Point(0, 630)
-        Me.IconButton17.Name = "IconButton17"
-        Me.IconButton17.Rotation = 0R
-        Me.IconButton17.Size = New System.Drawing.Size(252, 35)
-        Me.IconButton17.TabIndex = 32
-        Me.IconButton17.Text = "Conceptos"
-        Me.IconButton17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton17.UseVisualStyleBackColor = False
+        Me.BtnConceptos.BackColor = System.Drawing.Color.Transparent
+        Me.BtnConceptos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.SubMenuTransition.SetDecoration(Me.BtnConceptos, BunifuAnimatorNS.DecorationType.None)
+        Me.BtnConceptos.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnConceptos.FlatAppearance.BorderSize = 0
+        Me.BtnConceptos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.BtnConceptos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.BtnConceptos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnConceptos.Flip = FontAwesome.Sharp.FlipOrientation.Normal
+        Me.BtnConceptos.Font = New System.Drawing.Font("Poppins", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnConceptos.ForeColor = System.Drawing.Color.White
+        Me.BtnConceptos.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.BtnConceptos.IconColor = System.Drawing.Color.White
+        Me.BtnConceptos.IconSize = 32
+        Me.BtnConceptos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnConceptos.Location = New System.Drawing.Point(0, 595)
+        Me.BtnConceptos.Name = "BtnConceptos"
+        Me.BtnConceptos.Rotation = 0R
+        Me.BtnConceptos.Size = New System.Drawing.Size(235, 35)
+        Me.BtnConceptos.TabIndex = 32
+        Me.BtnConceptos.Text = "Conceptos"
+        Me.BtnConceptos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnConceptos.UseVisualStyleBackColor = False
         '
-        'IconButton16
+        'BtnNotificaciones
         '
-        Me.IconButton16.BackColor = System.Drawing.Color.Transparent
-        Me.IconButton16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.SubMenuTransition.SetDecoration(Me.IconButton16, BunifuAnimatorNS.DecorationType.None)
-        Me.IconButton16.Dock = System.Windows.Forms.DockStyle.Top
-        Me.IconButton16.FlatAppearance.BorderSize = 0
-        Me.IconButton16.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.IconButton16.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.IconButton16.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton16.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.IconButton16.Font = New System.Drawing.Font("Poppins", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IconButton16.ForeColor = System.Drawing.Color.White
-        Me.IconButton16.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.IconButton16.IconColor = System.Drawing.Color.White
-        Me.IconButton16.IconSize = 32
-        Me.IconButton16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton16.Location = New System.Drawing.Point(0, 595)
-        Me.IconButton16.Name = "IconButton16"
-        Me.IconButton16.Rotation = 0R
-        Me.IconButton16.Size = New System.Drawing.Size(252, 35)
-        Me.IconButton16.TabIndex = 31
-        Me.IconButton16.Text = "Notificaciones"
-        Me.IconButton16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton16.UseVisualStyleBackColor = False
+        Me.BtnNotificaciones.BackColor = System.Drawing.Color.Transparent
+        Me.BtnNotificaciones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.SubMenuTransition.SetDecoration(Me.BtnNotificaciones, BunifuAnimatorNS.DecorationType.None)
+        Me.BtnNotificaciones.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnNotificaciones.FlatAppearance.BorderSize = 0
+        Me.BtnNotificaciones.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.BtnNotificaciones.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.BtnNotificaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnNotificaciones.Flip = FontAwesome.Sharp.FlipOrientation.Normal
+        Me.BtnNotificaciones.Font = New System.Drawing.Font("Poppins", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnNotificaciones.ForeColor = System.Drawing.Color.White
+        Me.BtnNotificaciones.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.BtnNotificaciones.IconColor = System.Drawing.Color.White
+        Me.BtnNotificaciones.IconSize = 32
+        Me.BtnNotificaciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnNotificaciones.Location = New System.Drawing.Point(0, 560)
+        Me.BtnNotificaciones.Name = "BtnNotificaciones"
+        Me.BtnNotificaciones.Rotation = 0R
+        Me.BtnNotificaciones.Size = New System.Drawing.Size(235, 35)
+        Me.BtnNotificaciones.TabIndex = 31
+        Me.BtnNotificaciones.Text = "Notificaciones"
+        Me.BtnNotificaciones.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnNotificaciones.UseVisualStyleBackColor = False
         '
         'BtnActualizacionInv
         '
@@ -1114,40 +1112,14 @@ Partial Class FormPrincipal
         Me.BtnActualizacionInv.IconColor = System.Drawing.Color.White
         Me.BtnActualizacionInv.IconSize = 32
         Me.BtnActualizacionInv.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnActualizacionInv.Location = New System.Drawing.Point(0, 560)
+        Me.BtnActualizacionInv.Location = New System.Drawing.Point(0, 525)
         Me.BtnActualizacionInv.Name = "BtnActualizacionInv"
         Me.BtnActualizacionInv.Rotation = 0R
-        Me.BtnActualizacionInv.Size = New System.Drawing.Size(252, 35)
+        Me.BtnActualizacionInv.Size = New System.Drawing.Size(235, 35)
         Me.BtnActualizacionInv.TabIndex = 30
         Me.BtnActualizacionInv.Text = "Actualizacion de Inventario"
         Me.BtnActualizacionInv.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BtnActualizacionInv.UseVisualStyleBackColor = False
-        '
-        'BtnInvSelectivo
-        '
-        Me.BtnInvSelectivo.BackColor = System.Drawing.Color.Transparent
-        Me.BtnInvSelectivo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.SubMenuTransition.SetDecoration(Me.BtnInvSelectivo, BunifuAnimatorNS.DecorationType.None)
-        Me.BtnInvSelectivo.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BtnInvSelectivo.FlatAppearance.BorderSize = 0
-        Me.BtnInvSelectivo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.BtnInvSelectivo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.BtnInvSelectivo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BtnInvSelectivo.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.BtnInvSelectivo.Font = New System.Drawing.Font("Poppins", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnInvSelectivo.ForeColor = System.Drawing.Color.White
-        Me.BtnInvSelectivo.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.BtnInvSelectivo.IconColor = System.Drawing.Color.White
-        Me.BtnInvSelectivo.IconSize = 32
-        Me.BtnInvSelectivo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnInvSelectivo.Location = New System.Drawing.Point(0, 525)
-        Me.BtnInvSelectivo.Name = "BtnInvSelectivo"
-        Me.BtnInvSelectivo.Rotation = 0R
-        Me.BtnInvSelectivo.Size = New System.Drawing.Size(252, 35)
-        Me.BtnInvSelectivo.TabIndex = 29
-        Me.BtnInvSelectivo.Text = "Inventario Selectivo"
-        Me.BtnInvSelectivo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.BtnInvSelectivo.UseVisualStyleBackColor = False
         '
         'BtnInvFisico
         '
@@ -1169,375 +1141,375 @@ Partial Class FormPrincipal
         Me.BtnInvFisico.Location = New System.Drawing.Point(0, 490)
         Me.BtnInvFisico.Name = "BtnInvFisico"
         Me.BtnInvFisico.Rotation = 0R
-        Me.BtnInvFisico.Size = New System.Drawing.Size(252, 35)
+        Me.BtnInvFisico.Size = New System.Drawing.Size(235, 35)
         Me.BtnInvFisico.TabIndex = 28
         Me.BtnInvFisico.Text = "Inventario Fisico"
         Me.BtnInvFisico.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.BtnInvFisico.UseVisualStyleBackColor = False
         '
-        'IconButton15
+        'BtnPedidoMercancia
         '
-        Me.IconButton15.BackColor = System.Drawing.Color.Transparent
-        Me.IconButton15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.SubMenuTransition.SetDecoration(Me.IconButton15, BunifuAnimatorNS.DecorationType.None)
-        Me.IconButton15.Dock = System.Windows.Forms.DockStyle.Top
-        Me.IconButton15.FlatAppearance.BorderSize = 0
-        Me.IconButton15.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.IconButton15.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.IconButton15.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton15.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.IconButton15.Font = New System.Drawing.Font("Poppins", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IconButton15.ForeColor = System.Drawing.Color.White
-        Me.IconButton15.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.IconButton15.IconColor = System.Drawing.Color.White
-        Me.IconButton15.IconSize = 32
-        Me.IconButton15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton15.Location = New System.Drawing.Point(0, 455)
-        Me.IconButton15.Name = "IconButton15"
-        Me.IconButton15.Rotation = 0R
-        Me.IconButton15.Size = New System.Drawing.Size(252, 35)
-        Me.IconButton15.TabIndex = 27
-        Me.IconButton15.Text = "Pedido de mercancia"
-        Me.IconButton15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton15.UseVisualStyleBackColor = False
+        Me.BtnPedidoMercancia.BackColor = System.Drawing.Color.Transparent
+        Me.BtnPedidoMercancia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.SubMenuTransition.SetDecoration(Me.BtnPedidoMercancia, BunifuAnimatorNS.DecorationType.None)
+        Me.BtnPedidoMercancia.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnPedidoMercancia.FlatAppearance.BorderSize = 0
+        Me.BtnPedidoMercancia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.BtnPedidoMercancia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.BtnPedidoMercancia.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnPedidoMercancia.Flip = FontAwesome.Sharp.FlipOrientation.Normal
+        Me.BtnPedidoMercancia.Font = New System.Drawing.Font("Poppins", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnPedidoMercancia.ForeColor = System.Drawing.Color.White
+        Me.BtnPedidoMercancia.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.BtnPedidoMercancia.IconColor = System.Drawing.Color.White
+        Me.BtnPedidoMercancia.IconSize = 32
+        Me.BtnPedidoMercancia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnPedidoMercancia.Location = New System.Drawing.Point(0, 455)
+        Me.BtnPedidoMercancia.Name = "BtnPedidoMercancia"
+        Me.BtnPedidoMercancia.Rotation = 0R
+        Me.BtnPedidoMercancia.Size = New System.Drawing.Size(235, 35)
+        Me.BtnPedidoMercancia.TabIndex = 27
+        Me.BtnPedidoMercancia.Text = "Pedido de mercancia"
+        Me.BtnPedidoMercancia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnPedidoMercancia.UseVisualStyleBackColor = False
         '
-        'IconButton14
+        'BtnTraspasosEAlmacenes
         '
-        Me.IconButton14.BackColor = System.Drawing.Color.Transparent
-        Me.IconButton14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.SubMenuTransition.SetDecoration(Me.IconButton14, BunifuAnimatorNS.DecorationType.None)
-        Me.IconButton14.Dock = System.Windows.Forms.DockStyle.Top
-        Me.IconButton14.FlatAppearance.BorderSize = 0
-        Me.IconButton14.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.IconButton14.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.IconButton14.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton14.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.IconButton14.Font = New System.Drawing.Font("Poppins", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IconButton14.ForeColor = System.Drawing.Color.White
-        Me.IconButton14.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.IconButton14.IconColor = System.Drawing.Color.White
-        Me.IconButton14.IconSize = 32
-        Me.IconButton14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton14.Location = New System.Drawing.Point(0, 420)
-        Me.IconButton14.Name = "IconButton14"
-        Me.IconButton14.Rotation = 0R
-        Me.IconButton14.Size = New System.Drawing.Size(252, 35)
-        Me.IconButton14.TabIndex = 26
-        Me.IconButton14.Text = "Traspaso entre almacenes "
-        Me.IconButton14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton14.UseVisualStyleBackColor = False
+        Me.BtnTraspasosEAlmacenes.BackColor = System.Drawing.Color.Transparent
+        Me.BtnTraspasosEAlmacenes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.SubMenuTransition.SetDecoration(Me.BtnTraspasosEAlmacenes, BunifuAnimatorNS.DecorationType.None)
+        Me.BtnTraspasosEAlmacenes.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnTraspasosEAlmacenes.FlatAppearance.BorderSize = 0
+        Me.BtnTraspasosEAlmacenes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.BtnTraspasosEAlmacenes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.BtnTraspasosEAlmacenes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnTraspasosEAlmacenes.Flip = FontAwesome.Sharp.FlipOrientation.Normal
+        Me.BtnTraspasosEAlmacenes.Font = New System.Drawing.Font("Poppins", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnTraspasosEAlmacenes.ForeColor = System.Drawing.Color.White
+        Me.BtnTraspasosEAlmacenes.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.BtnTraspasosEAlmacenes.IconColor = System.Drawing.Color.White
+        Me.BtnTraspasosEAlmacenes.IconSize = 32
+        Me.BtnTraspasosEAlmacenes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnTraspasosEAlmacenes.Location = New System.Drawing.Point(0, 420)
+        Me.BtnTraspasosEAlmacenes.Name = "BtnTraspasosEAlmacenes"
+        Me.BtnTraspasosEAlmacenes.Rotation = 0R
+        Me.BtnTraspasosEAlmacenes.Size = New System.Drawing.Size(235, 35)
+        Me.BtnTraspasosEAlmacenes.TabIndex = 26
+        Me.BtnTraspasosEAlmacenes.Text = "Traspaso entre almacenes "
+        Me.BtnTraspasosEAlmacenes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnTraspasosEAlmacenes.UseVisualStyleBackColor = False
         '
-        'IconButton13
+        'SalidaMercancia
         '
-        Me.IconButton13.BackColor = System.Drawing.Color.Transparent
-        Me.IconButton13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.SubMenuTransition.SetDecoration(Me.IconButton13, BunifuAnimatorNS.DecorationType.None)
-        Me.IconButton13.Dock = System.Windows.Forms.DockStyle.Top
-        Me.IconButton13.FlatAppearance.BorderSize = 0
-        Me.IconButton13.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.IconButton13.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.IconButton13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton13.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.IconButton13.Font = New System.Drawing.Font("Poppins", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IconButton13.ForeColor = System.Drawing.Color.White
-        Me.IconButton13.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.IconButton13.IconColor = System.Drawing.Color.White
-        Me.IconButton13.IconSize = 32
-        Me.IconButton13.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton13.Location = New System.Drawing.Point(0, 385)
-        Me.IconButton13.Name = "IconButton13"
-        Me.IconButton13.Rotation = 0R
-        Me.IconButton13.Size = New System.Drawing.Size(252, 35)
-        Me.IconButton13.TabIndex = 25
-        Me.IconButton13.Text = "Salida de mercancia"
-        Me.IconButton13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton13.UseVisualStyleBackColor = False
+        Me.SalidaMercancia.BackColor = System.Drawing.Color.Transparent
+        Me.SalidaMercancia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.SubMenuTransition.SetDecoration(Me.SalidaMercancia, BunifuAnimatorNS.DecorationType.None)
+        Me.SalidaMercancia.Dock = System.Windows.Forms.DockStyle.Top
+        Me.SalidaMercancia.FlatAppearance.BorderSize = 0
+        Me.SalidaMercancia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.SalidaMercancia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.SalidaMercancia.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.SalidaMercancia.Flip = FontAwesome.Sharp.FlipOrientation.Normal
+        Me.SalidaMercancia.Font = New System.Drawing.Font("Poppins", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SalidaMercancia.ForeColor = System.Drawing.Color.White
+        Me.SalidaMercancia.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.SalidaMercancia.IconColor = System.Drawing.Color.White
+        Me.SalidaMercancia.IconSize = 32
+        Me.SalidaMercancia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.SalidaMercancia.Location = New System.Drawing.Point(0, 385)
+        Me.SalidaMercancia.Name = "SalidaMercancia"
+        Me.SalidaMercancia.Rotation = 0R
+        Me.SalidaMercancia.Size = New System.Drawing.Size(235, 35)
+        Me.SalidaMercancia.TabIndex = 25
+        Me.SalidaMercancia.Text = "Salida de mercancia"
+        Me.SalidaMercancia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.SalidaMercancia.UseVisualStyleBackColor = False
         '
-        'IconButton12
+        'BtnEntradasMercancia
         '
-        Me.IconButton12.BackColor = System.Drawing.Color.Transparent
-        Me.IconButton12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.SubMenuTransition.SetDecoration(Me.IconButton12, BunifuAnimatorNS.DecorationType.None)
-        Me.IconButton12.Dock = System.Windows.Forms.DockStyle.Top
-        Me.IconButton12.FlatAppearance.BorderSize = 0
-        Me.IconButton12.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.IconButton12.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.IconButton12.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton12.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.IconButton12.Font = New System.Drawing.Font("Poppins", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IconButton12.ForeColor = System.Drawing.Color.White
-        Me.IconButton12.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.IconButton12.IconColor = System.Drawing.Color.White
-        Me.IconButton12.IconSize = 32
-        Me.IconButton12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton12.Location = New System.Drawing.Point(0, 350)
-        Me.IconButton12.Name = "IconButton12"
-        Me.IconButton12.Rotation = 0R
-        Me.IconButton12.Size = New System.Drawing.Size(252, 35)
-        Me.IconButton12.TabIndex = 24
-        Me.IconButton12.Text = "Entrada de mercancia"
-        Me.IconButton12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton12.UseVisualStyleBackColor = False
+        Me.BtnEntradasMercancia.BackColor = System.Drawing.Color.Transparent
+        Me.BtnEntradasMercancia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.SubMenuTransition.SetDecoration(Me.BtnEntradasMercancia, BunifuAnimatorNS.DecorationType.None)
+        Me.BtnEntradasMercancia.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnEntradasMercancia.FlatAppearance.BorderSize = 0
+        Me.BtnEntradasMercancia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.BtnEntradasMercancia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.BtnEntradasMercancia.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnEntradasMercancia.Flip = FontAwesome.Sharp.FlipOrientation.Normal
+        Me.BtnEntradasMercancia.Font = New System.Drawing.Font("Poppins", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnEntradasMercancia.ForeColor = System.Drawing.Color.White
+        Me.BtnEntradasMercancia.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.BtnEntradasMercancia.IconColor = System.Drawing.Color.White
+        Me.BtnEntradasMercancia.IconSize = 32
+        Me.BtnEntradasMercancia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnEntradasMercancia.Location = New System.Drawing.Point(0, 350)
+        Me.BtnEntradasMercancia.Name = "BtnEntradasMercancia"
+        Me.BtnEntradasMercancia.Rotation = 0R
+        Me.BtnEntradasMercancia.Size = New System.Drawing.Size(235, 35)
+        Me.BtnEntradasMercancia.TabIndex = 24
+        Me.BtnEntradasMercancia.Text = "Entrada de mercancia"
+        Me.BtnEntradasMercancia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnEntradasMercancia.UseVisualStyleBackColor = False
         '
-        'IconButton11
+        'BtnTablajeria
         '
-        Me.IconButton11.BackColor = System.Drawing.Color.Transparent
-        Me.IconButton11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.SubMenuTransition.SetDecoration(Me.IconButton11, BunifuAnimatorNS.DecorationType.None)
-        Me.IconButton11.Dock = System.Windows.Forms.DockStyle.Top
-        Me.IconButton11.FlatAppearance.BorderSize = 0
-        Me.IconButton11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.IconButton11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.IconButton11.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton11.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.IconButton11.Font = New System.Drawing.Font("Poppins", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IconButton11.ForeColor = System.Drawing.Color.White
-        Me.IconButton11.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.IconButton11.IconColor = System.Drawing.Color.White
-        Me.IconButton11.IconSize = 32
-        Me.IconButton11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton11.Location = New System.Drawing.Point(0, 315)
-        Me.IconButton11.Name = "IconButton11"
-        Me.IconButton11.Rotation = 0R
-        Me.IconButton11.Size = New System.Drawing.Size(252, 35)
-        Me.IconButton11.TabIndex = 23
-        Me.IconButton11.Text = "Tablajeria"
-        Me.IconButton11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton11.UseVisualStyleBackColor = False
+        Me.BtnTablajeria.BackColor = System.Drawing.Color.Transparent
+        Me.BtnTablajeria.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.SubMenuTransition.SetDecoration(Me.BtnTablajeria, BunifuAnimatorNS.DecorationType.None)
+        Me.BtnTablajeria.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnTablajeria.FlatAppearance.BorderSize = 0
+        Me.BtnTablajeria.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.BtnTablajeria.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.BtnTablajeria.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnTablajeria.Flip = FontAwesome.Sharp.FlipOrientation.Normal
+        Me.BtnTablajeria.Font = New System.Drawing.Font("Poppins", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnTablajeria.ForeColor = System.Drawing.Color.White
+        Me.BtnTablajeria.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.BtnTablajeria.IconColor = System.Drawing.Color.White
+        Me.BtnTablajeria.IconSize = 32
+        Me.BtnTablajeria.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnTablajeria.Location = New System.Drawing.Point(0, 315)
+        Me.BtnTablajeria.Name = "BtnTablajeria"
+        Me.BtnTablajeria.Rotation = 0R
+        Me.BtnTablajeria.Size = New System.Drawing.Size(235, 35)
+        Me.BtnTablajeria.TabIndex = 23
+        Me.BtnTablajeria.Text = "Tablajeria"
+        Me.BtnTablajeria.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnTablajeria.UseVisualStyleBackColor = False
         '
-        'IconButton10
+        'BtnMinMax
         '
-        Me.IconButton10.BackColor = System.Drawing.Color.Transparent
-        Me.IconButton10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.SubMenuTransition.SetDecoration(Me.IconButton10, BunifuAnimatorNS.DecorationType.None)
-        Me.IconButton10.Dock = System.Windows.Forms.DockStyle.Top
-        Me.IconButton10.FlatAppearance.BorderSize = 0
-        Me.IconButton10.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.IconButton10.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.IconButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton10.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.IconButton10.Font = New System.Drawing.Font("Poppins", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IconButton10.ForeColor = System.Drawing.Color.White
-        Me.IconButton10.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.IconButton10.IconColor = System.Drawing.Color.White
-        Me.IconButton10.IconSize = 32
-        Me.IconButton10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton10.Location = New System.Drawing.Point(0, 280)
-        Me.IconButton10.Name = "IconButton10"
-        Me.IconButton10.Rotation = 0R
-        Me.IconButton10.Size = New System.Drawing.Size(252, 35)
-        Me.IconButton10.TabIndex = 22
-        Me.IconButton10.Text = "Minimos y maximos"
-        Me.IconButton10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton10.UseVisualStyleBackColor = False
+        Me.BtnMinMax.BackColor = System.Drawing.Color.Transparent
+        Me.BtnMinMax.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.SubMenuTransition.SetDecoration(Me.BtnMinMax, BunifuAnimatorNS.DecorationType.None)
+        Me.BtnMinMax.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnMinMax.FlatAppearance.BorderSize = 0
+        Me.BtnMinMax.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.BtnMinMax.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.BtnMinMax.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnMinMax.Flip = FontAwesome.Sharp.FlipOrientation.Normal
+        Me.BtnMinMax.Font = New System.Drawing.Font("Poppins", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnMinMax.ForeColor = System.Drawing.Color.White
+        Me.BtnMinMax.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.BtnMinMax.IconColor = System.Drawing.Color.White
+        Me.BtnMinMax.IconSize = 32
+        Me.BtnMinMax.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnMinMax.Location = New System.Drawing.Point(0, 280)
+        Me.BtnMinMax.Name = "BtnMinMax"
+        Me.BtnMinMax.Rotation = 0R
+        Me.BtnMinMax.Size = New System.Drawing.Size(235, 35)
+        Me.BtnMinMax.TabIndex = 22
+        Me.BtnMinMax.Text = "Minimos y maximos"
+        Me.BtnMinMax.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnMinMax.UseVisualStyleBackColor = False
         '
-        'IconButton9
+        'BtnProductosProcesados
         '
-        Me.IconButton9.BackColor = System.Drawing.Color.Transparent
-        Me.IconButton9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.SubMenuTransition.SetDecoration(Me.IconButton9, BunifuAnimatorNS.DecorationType.None)
-        Me.IconButton9.Dock = System.Windows.Forms.DockStyle.Top
-        Me.IconButton9.FlatAppearance.BorderSize = 0
-        Me.IconButton9.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.IconButton9.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.IconButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton9.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.IconButton9.Font = New System.Drawing.Font("Poppins", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IconButton9.ForeColor = System.Drawing.Color.White
-        Me.IconButton9.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.IconButton9.IconColor = System.Drawing.Color.White
-        Me.IconButton9.IconSize = 32
-        Me.IconButton9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton9.Location = New System.Drawing.Point(0, 245)
-        Me.IconButton9.Name = "IconButton9"
-        Me.IconButton9.Rotation = 0R
-        Me.IconButton9.Size = New System.Drawing.Size(252, 35)
-        Me.IconButton9.TabIndex = 21
-        Me.IconButton9.Text = "Productos procesados"
-        Me.IconButton9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton9.UseVisualStyleBackColor = False
+        Me.BtnProductosProcesados.BackColor = System.Drawing.Color.Transparent
+        Me.BtnProductosProcesados.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.SubMenuTransition.SetDecoration(Me.BtnProductosProcesados, BunifuAnimatorNS.DecorationType.None)
+        Me.BtnProductosProcesados.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnProductosProcesados.FlatAppearance.BorderSize = 0
+        Me.BtnProductosProcesados.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.BtnProductosProcesados.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.BtnProductosProcesados.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnProductosProcesados.Flip = FontAwesome.Sharp.FlipOrientation.Normal
+        Me.BtnProductosProcesados.Font = New System.Drawing.Font("Poppins", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnProductosProcesados.ForeColor = System.Drawing.Color.White
+        Me.BtnProductosProcesados.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.BtnProductosProcesados.IconColor = System.Drawing.Color.White
+        Me.BtnProductosProcesados.IconSize = 32
+        Me.BtnProductosProcesados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnProductosProcesados.Location = New System.Drawing.Point(0, 245)
+        Me.BtnProductosProcesados.Name = "BtnProductosProcesados"
+        Me.BtnProductosProcesados.Rotation = 0R
+        Me.BtnProductosProcesados.Size = New System.Drawing.Size(235, 35)
+        Me.BtnProductosProcesados.TabIndex = 21
+        Me.BtnProductosProcesados.Text = "Productos procesados"
+        Me.BtnProductosProcesados.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnProductosProcesados.UseVisualStyleBackColor = False
         '
-        'IconButton8
+        'BtnEscalasPrecio
         '
-        Me.IconButton8.BackColor = System.Drawing.Color.Transparent
-        Me.IconButton8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.SubMenuTransition.SetDecoration(Me.IconButton8, BunifuAnimatorNS.DecorationType.None)
-        Me.IconButton8.Dock = System.Windows.Forms.DockStyle.Top
-        Me.IconButton8.FlatAppearance.BorderSize = 0
-        Me.IconButton8.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.IconButton8.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.IconButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton8.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.IconButton8.Font = New System.Drawing.Font("Poppins", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IconButton8.ForeColor = System.Drawing.Color.White
-        Me.IconButton8.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.IconButton8.IconColor = System.Drawing.Color.White
-        Me.IconButton8.IconSize = 32
-        Me.IconButton8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton8.Location = New System.Drawing.Point(0, 210)
-        Me.IconButton8.Name = "IconButton8"
-        Me.IconButton8.Rotation = 0R
-        Me.IconButton8.Size = New System.Drawing.Size(252, 35)
-        Me.IconButton8.TabIndex = 20
-        Me.IconButton8.Text = "Escalas de precio"
-        Me.IconButton8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton8.UseVisualStyleBackColor = False
+        Me.BtnEscalasPrecio.BackColor = System.Drawing.Color.Transparent
+        Me.BtnEscalasPrecio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.SubMenuTransition.SetDecoration(Me.BtnEscalasPrecio, BunifuAnimatorNS.DecorationType.None)
+        Me.BtnEscalasPrecio.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnEscalasPrecio.FlatAppearance.BorderSize = 0
+        Me.BtnEscalasPrecio.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.BtnEscalasPrecio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.BtnEscalasPrecio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnEscalasPrecio.Flip = FontAwesome.Sharp.FlipOrientation.Normal
+        Me.BtnEscalasPrecio.Font = New System.Drawing.Font("Poppins", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnEscalasPrecio.ForeColor = System.Drawing.Color.White
+        Me.BtnEscalasPrecio.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.BtnEscalasPrecio.IconColor = System.Drawing.Color.White
+        Me.BtnEscalasPrecio.IconSize = 32
+        Me.BtnEscalasPrecio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnEscalasPrecio.Location = New System.Drawing.Point(0, 210)
+        Me.BtnEscalasPrecio.Name = "BtnEscalasPrecio"
+        Me.BtnEscalasPrecio.Rotation = 0R
+        Me.BtnEscalasPrecio.Size = New System.Drawing.Size(235, 35)
+        Me.BtnEscalasPrecio.TabIndex = 20
+        Me.BtnEscalasPrecio.Text = "Escalas de precio"
+        Me.BtnEscalasPrecio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnEscalasPrecio.UseVisualStyleBackColor = False
         '
-        'IconButton7
+        'BtnFamYDepartamentos
         '
-        Me.IconButton7.BackColor = System.Drawing.Color.Transparent
-        Me.IconButton7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.SubMenuTransition.SetDecoration(Me.IconButton7, BunifuAnimatorNS.DecorationType.None)
-        Me.IconButton7.Dock = System.Windows.Forms.DockStyle.Top
-        Me.IconButton7.FlatAppearance.BorderSize = 0
-        Me.IconButton7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.IconButton7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.IconButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton7.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.IconButton7.Font = New System.Drawing.Font("Poppins", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IconButton7.ForeColor = System.Drawing.Color.White
-        Me.IconButton7.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.IconButton7.IconColor = System.Drawing.Color.White
-        Me.IconButton7.IconSize = 32
-        Me.IconButton7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton7.Location = New System.Drawing.Point(0, 175)
-        Me.IconButton7.Name = "IconButton7"
-        Me.IconButton7.Rotation = 0R
-        Me.IconButton7.Size = New System.Drawing.Size(252, 35)
-        Me.IconButton7.TabIndex = 19
-        Me.IconButton7.Text = "Familias y departamentos"
-        Me.IconButton7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton7.UseVisualStyleBackColor = False
+        Me.BtnFamYDepartamentos.BackColor = System.Drawing.Color.Transparent
+        Me.BtnFamYDepartamentos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.SubMenuTransition.SetDecoration(Me.BtnFamYDepartamentos, BunifuAnimatorNS.DecorationType.None)
+        Me.BtnFamYDepartamentos.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnFamYDepartamentos.FlatAppearance.BorderSize = 0
+        Me.BtnFamYDepartamentos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.BtnFamYDepartamentos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.BtnFamYDepartamentos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnFamYDepartamentos.Flip = FontAwesome.Sharp.FlipOrientation.Normal
+        Me.BtnFamYDepartamentos.Font = New System.Drawing.Font("Poppins", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnFamYDepartamentos.ForeColor = System.Drawing.Color.White
+        Me.BtnFamYDepartamentos.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.BtnFamYDepartamentos.IconColor = System.Drawing.Color.White
+        Me.BtnFamYDepartamentos.IconSize = 32
+        Me.BtnFamYDepartamentos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnFamYDepartamentos.Location = New System.Drawing.Point(0, 175)
+        Me.BtnFamYDepartamentos.Name = "BtnFamYDepartamentos"
+        Me.BtnFamYDepartamentos.Rotation = 0R
+        Me.BtnFamYDepartamentos.Size = New System.Drawing.Size(235, 35)
+        Me.BtnFamYDepartamentos.TabIndex = 19
+        Me.BtnFamYDepartamentos.Text = "Familias y departamentos"
+        Me.BtnFamYDepartamentos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnFamYDepartamentos.UseVisualStyleBackColor = False
         '
-        'IconButton6
+        'BtnVerificadorProductos
         '
-        Me.IconButton6.BackColor = System.Drawing.Color.Transparent
-        Me.IconButton6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.SubMenuTransition.SetDecoration(Me.IconButton6, BunifuAnimatorNS.DecorationType.None)
-        Me.IconButton6.Dock = System.Windows.Forms.DockStyle.Top
-        Me.IconButton6.FlatAppearance.BorderSize = 0
-        Me.IconButton6.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.IconButton6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.IconButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton6.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.IconButton6.Font = New System.Drawing.Font("Poppins", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IconButton6.ForeColor = System.Drawing.Color.White
-        Me.IconButton6.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.IconButton6.IconColor = System.Drawing.Color.White
-        Me.IconButton6.IconSize = 32
-        Me.IconButton6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton6.Location = New System.Drawing.Point(0, 140)
-        Me.IconButton6.Name = "IconButton6"
-        Me.IconButton6.Rotation = 0R
-        Me.IconButton6.Size = New System.Drawing.Size(252, 35)
-        Me.IconButton6.TabIndex = 18
-        Me.IconButton6.Text = "Verificador de productos"
-        Me.IconButton6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton6.UseVisualStyleBackColor = False
+        Me.BtnVerificadorProductos.BackColor = System.Drawing.Color.Transparent
+        Me.BtnVerificadorProductos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.SubMenuTransition.SetDecoration(Me.BtnVerificadorProductos, BunifuAnimatorNS.DecorationType.None)
+        Me.BtnVerificadorProductos.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnVerificadorProductos.FlatAppearance.BorderSize = 0
+        Me.BtnVerificadorProductos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.BtnVerificadorProductos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.BtnVerificadorProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnVerificadorProductos.Flip = FontAwesome.Sharp.FlipOrientation.Normal
+        Me.BtnVerificadorProductos.Font = New System.Drawing.Font("Poppins", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnVerificadorProductos.ForeColor = System.Drawing.Color.White
+        Me.BtnVerificadorProductos.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.BtnVerificadorProductos.IconColor = System.Drawing.Color.White
+        Me.BtnVerificadorProductos.IconSize = 32
+        Me.BtnVerificadorProductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnVerificadorProductos.Location = New System.Drawing.Point(0, 140)
+        Me.BtnVerificadorProductos.Name = "BtnVerificadorProductos"
+        Me.BtnVerificadorProductos.Rotation = 0R
+        Me.BtnVerificadorProductos.Size = New System.Drawing.Size(235, 35)
+        Me.BtnVerificadorProductos.TabIndex = 18
+        Me.BtnVerificadorProductos.Text = "Verificador de productos"
+        Me.BtnVerificadorProductos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnVerificadorProductos.UseVisualStyleBackColor = False
         '
-        'IconButton5
+        'BtnActivacionPrecios
         '
-        Me.IconButton5.BackColor = System.Drawing.Color.Transparent
-        Me.IconButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.SubMenuTransition.SetDecoration(Me.IconButton5, BunifuAnimatorNS.DecorationType.None)
-        Me.IconButton5.Dock = System.Windows.Forms.DockStyle.Top
-        Me.IconButton5.FlatAppearance.BorderSize = 0
-        Me.IconButton5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.IconButton5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.IconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton5.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.IconButton5.Font = New System.Drawing.Font("Poppins", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IconButton5.ForeColor = System.Drawing.Color.White
-        Me.IconButton5.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.IconButton5.IconColor = System.Drawing.Color.White
-        Me.IconButton5.IconSize = 32
-        Me.IconButton5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton5.Location = New System.Drawing.Point(0, 105)
-        Me.IconButton5.Name = "IconButton5"
-        Me.IconButton5.Rotation = 0R
-        Me.IconButton5.Size = New System.Drawing.Size(252, 35)
-        Me.IconButton5.TabIndex = 17
-        Me.IconButton5.Text = "Activacion de precios"
-        Me.IconButton5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton5.UseVisualStyleBackColor = False
+        Me.BtnActivacionPrecios.BackColor = System.Drawing.Color.Transparent
+        Me.BtnActivacionPrecios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.SubMenuTransition.SetDecoration(Me.BtnActivacionPrecios, BunifuAnimatorNS.DecorationType.None)
+        Me.BtnActivacionPrecios.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnActivacionPrecios.FlatAppearance.BorderSize = 0
+        Me.BtnActivacionPrecios.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.BtnActivacionPrecios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.BtnActivacionPrecios.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnActivacionPrecios.Flip = FontAwesome.Sharp.FlipOrientation.Normal
+        Me.BtnActivacionPrecios.Font = New System.Drawing.Font("Poppins", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnActivacionPrecios.ForeColor = System.Drawing.Color.White
+        Me.BtnActivacionPrecios.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.BtnActivacionPrecios.IconColor = System.Drawing.Color.White
+        Me.BtnActivacionPrecios.IconSize = 32
+        Me.BtnActivacionPrecios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnActivacionPrecios.Location = New System.Drawing.Point(0, 105)
+        Me.BtnActivacionPrecios.Name = "BtnActivacionPrecios"
+        Me.BtnActivacionPrecios.Rotation = 0R
+        Me.BtnActivacionPrecios.Size = New System.Drawing.Size(235, 35)
+        Me.BtnActivacionPrecios.TabIndex = 17
+        Me.BtnActivacionPrecios.Text = "Activacion de precios"
+        Me.BtnActivacionPrecios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnActivacionPrecios.UseVisualStyleBackColor = False
         '
-        'IconButton4
+        'BtnCatalogoProductos
         '
-        Me.IconButton4.BackColor = System.Drawing.Color.Transparent
-        Me.IconButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.SubMenuTransition.SetDecoration(Me.IconButton4, BunifuAnimatorNS.DecorationType.None)
-        Me.IconButton4.Dock = System.Windows.Forms.DockStyle.Top
-        Me.IconButton4.FlatAppearance.BorderSize = 0
-        Me.IconButton4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.IconButton4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.IconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton4.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.IconButton4.Font = New System.Drawing.Font("Poppins", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IconButton4.ForeColor = System.Drawing.Color.White
-        Me.IconButton4.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.IconButton4.IconColor = System.Drawing.Color.White
-        Me.IconButton4.IconSize = 32
-        Me.IconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton4.Location = New System.Drawing.Point(0, 70)
-        Me.IconButton4.Name = "IconButton4"
-        Me.IconButton4.Rotation = 0R
-        Me.IconButton4.Size = New System.Drawing.Size(252, 35)
-        Me.IconButton4.TabIndex = 16
-        Me.IconButton4.Text = "Catalogo de productos"
-        Me.IconButton4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton4.UseVisualStyleBackColor = False
+        Me.BtnCatalogoProductos.BackColor = System.Drawing.Color.Transparent
+        Me.BtnCatalogoProductos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.SubMenuTransition.SetDecoration(Me.BtnCatalogoProductos, BunifuAnimatorNS.DecorationType.None)
+        Me.BtnCatalogoProductos.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnCatalogoProductos.FlatAppearance.BorderSize = 0
+        Me.BtnCatalogoProductos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.BtnCatalogoProductos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.BtnCatalogoProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnCatalogoProductos.Flip = FontAwesome.Sharp.FlipOrientation.Normal
+        Me.BtnCatalogoProductos.Font = New System.Drawing.Font("Poppins", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnCatalogoProductos.ForeColor = System.Drawing.Color.White
+        Me.BtnCatalogoProductos.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.BtnCatalogoProductos.IconColor = System.Drawing.Color.White
+        Me.BtnCatalogoProductos.IconSize = 32
+        Me.BtnCatalogoProductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnCatalogoProductos.Location = New System.Drawing.Point(0, 70)
+        Me.BtnCatalogoProductos.Name = "BtnCatalogoProductos"
+        Me.BtnCatalogoProductos.Rotation = 0R
+        Me.BtnCatalogoProductos.Size = New System.Drawing.Size(235, 35)
+        Me.BtnCatalogoProductos.TabIndex = 16
+        Me.BtnCatalogoProductos.Text = "Catalogo de productos"
+        Me.BtnCatalogoProductos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnCatalogoProductos.UseVisualStyleBackColor = False
         '
-        'IconButton3
+        'BtnProductos
         '
-        Me.IconButton3.BackColor = System.Drawing.Color.Transparent
-        Me.IconButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.SubMenuTransition.SetDecoration(Me.IconButton3, BunifuAnimatorNS.DecorationType.None)
-        Me.IconButton3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.IconButton3.FlatAppearance.BorderSize = 0
-        Me.IconButton3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.IconButton3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.IconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton3.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.IconButton3.Font = New System.Drawing.Font("Poppins", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IconButton3.ForeColor = System.Drawing.Color.White
-        Me.IconButton3.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.IconButton3.IconColor = System.Drawing.Color.White
-        Me.IconButton3.IconSize = 32
-        Me.IconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton3.Location = New System.Drawing.Point(0, 35)
-        Me.IconButton3.Name = "IconButton3"
-        Me.IconButton3.Rotation = 0R
-        Me.IconButton3.Size = New System.Drawing.Size(252, 35)
-        Me.IconButton3.TabIndex = 15
-        Me.IconButton3.Text = "Productos"
-        Me.IconButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton3.UseVisualStyleBackColor = False
+        Me.BtnProductos.BackColor = System.Drawing.Color.Transparent
+        Me.BtnProductos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.SubMenuTransition.SetDecoration(Me.BtnProductos, BunifuAnimatorNS.DecorationType.None)
+        Me.BtnProductos.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnProductos.FlatAppearance.BorderSize = 0
+        Me.BtnProductos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.BtnProductos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.BtnProductos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnProductos.Flip = FontAwesome.Sharp.FlipOrientation.Normal
+        Me.BtnProductos.Font = New System.Drawing.Font("Poppins", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnProductos.ForeColor = System.Drawing.Color.White
+        Me.BtnProductos.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.BtnProductos.IconColor = System.Drawing.Color.White
+        Me.BtnProductos.IconSize = 32
+        Me.BtnProductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnProductos.Location = New System.Drawing.Point(0, 35)
+        Me.BtnProductos.Name = "BtnProductos"
+        Me.BtnProductos.Rotation = 0R
+        Me.BtnProductos.Size = New System.Drawing.Size(235, 35)
+        Me.BtnProductos.TabIndex = 15
+        Me.BtnProductos.Text = "Productos"
+        Me.BtnProductos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnProductos.UseVisualStyleBackColor = False
         '
-        'IconButton2
+        'BtnSucursalesYAlmacenes
         '
-        Me.IconButton2.BackColor = System.Drawing.Color.Transparent
-        Me.IconButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.SubMenuTransition.SetDecoration(Me.IconButton2, BunifuAnimatorNS.DecorationType.None)
-        Me.IconButton2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.IconButton2.FlatAppearance.BorderSize = 0
-        Me.IconButton2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.IconButton2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
-        Me.IconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.IconButton2.Flip = FontAwesome.Sharp.FlipOrientation.Normal
-        Me.IconButton2.Font = New System.Drawing.Font("Poppins", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IconButton2.ForeColor = System.Drawing.Color.White
-        Me.IconButton2.IconChar = FontAwesome.Sharp.IconChar.None
-        Me.IconButton2.IconColor = System.Drawing.Color.White
-        Me.IconButton2.IconSize = 32
-        Me.IconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton2.Location = New System.Drawing.Point(0, 0)
-        Me.IconButton2.Name = "IconButton2"
-        Me.IconButton2.Rotation = 0R
-        Me.IconButton2.Size = New System.Drawing.Size(252, 35)
-        Me.IconButton2.TabIndex = 14
-        Me.IconButton2.Text = "Sucursales y almacenes"
-        Me.IconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.IconButton2.UseVisualStyleBackColor = False
+        Me.BtnSucursalesYAlmacenes.BackColor = System.Drawing.Color.Transparent
+        Me.BtnSucursalesYAlmacenes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.SubMenuTransition.SetDecoration(Me.BtnSucursalesYAlmacenes, BunifuAnimatorNS.DecorationType.None)
+        Me.BtnSucursalesYAlmacenes.Dock = System.Windows.Forms.DockStyle.Top
+        Me.BtnSucursalesYAlmacenes.FlatAppearance.BorderSize = 0
+        Me.BtnSucursalesYAlmacenes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.BtnSucursalesYAlmacenes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.BtnSucursalesYAlmacenes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.BtnSucursalesYAlmacenes.Flip = FontAwesome.Sharp.FlipOrientation.Normal
+        Me.BtnSucursalesYAlmacenes.Font = New System.Drawing.Font("Poppins", 8.999999!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnSucursalesYAlmacenes.ForeColor = System.Drawing.Color.White
+        Me.BtnSucursalesYAlmacenes.IconChar = FontAwesome.Sharp.IconChar.None
+        Me.BtnSucursalesYAlmacenes.IconColor = System.Drawing.Color.White
+        Me.BtnSucursalesYAlmacenes.IconSize = 32
+        Me.BtnSucursalesYAlmacenes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnSucursalesYAlmacenes.Location = New System.Drawing.Point(0, 0)
+        Me.BtnSucursalesYAlmacenes.Name = "BtnSucursalesYAlmacenes"
+        Me.BtnSucursalesYAlmacenes.Rotation = 0R
+        Me.BtnSucursalesYAlmacenes.Size = New System.Drawing.Size(235, 35)
+        Me.BtnSucursalesYAlmacenes.TabIndex = 14
+        Me.BtnSucursalesYAlmacenes.Text = "Sucursales y almacenes"
+        Me.BtnSucursalesYAlmacenes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BtnSucursalesYAlmacenes.UseVisualStyleBackColor = False
         '
         'BtnAlmacen
         '
@@ -1559,7 +1531,7 @@ Partial Class FormPrincipal
         Me.BtnAlmacen.Location = New System.Drawing.Point(0, 53)
         Me.BtnAlmacen.Name = "BtnAlmacen"
         Me.BtnAlmacen.Rotation = 0R
-        Me.BtnAlmacen.Size = New System.Drawing.Size(252, 43)
+        Me.BtnAlmacen.Size = New System.Drawing.Size(235, 43)
         Me.BtnAlmacen.TabIndex = 10
         Me.BtnAlmacen.Text = "      ALMACEN"
         Me.BtnAlmacen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -1591,7 +1563,7 @@ Partial Class FormPrincipal
         Me.SubMenuVentas.Location = New System.Drawing.Point(0, 43)
         Me.SubMenuVentas.Name = "SubMenuVentas"
         Me.SubMenuVentas.Quality = 10
-        Me.SubMenuVentas.Size = New System.Drawing.Size(252, 10)
+        Me.SubMenuVentas.Size = New System.Drawing.Size(235, 10)
         Me.SubMenuVentas.TabIndex = 3
         Me.SubMenuVentas.Visible = False
         '
@@ -1615,7 +1587,7 @@ Partial Class FormPrincipal
         Me.BtnReporteadorCredCobranza.Location = New System.Drawing.Point(0, 420)
         Me.BtnReporteadorCredCobranza.Name = "BtnReporteadorCredCobranza"
         Me.BtnReporteadorCredCobranza.Rotation = 0R
-        Me.BtnReporteadorCredCobranza.Size = New System.Drawing.Size(252, 35)
+        Me.BtnReporteadorCredCobranza.Size = New System.Drawing.Size(235, 35)
         Me.BtnReporteadorCredCobranza.TabIndex = 13
         Me.BtnReporteadorCredCobranza.Text = "Reporteador de credito y cobranza"
         Me.BtnReporteadorCredCobranza.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1641,7 +1613,7 @@ Partial Class FormPrincipal
         Me.BtnReporteadorRutas.Location = New System.Drawing.Point(0, 385)
         Me.BtnReporteadorRutas.Name = "BtnReporteadorRutas"
         Me.BtnReporteadorRutas.Rotation = 0R
-        Me.BtnReporteadorRutas.Size = New System.Drawing.Size(252, 35)
+        Me.BtnReporteadorRutas.Size = New System.Drawing.Size(235, 35)
         Me.BtnReporteadorRutas.TabIndex = 12
         Me.BtnReporteadorRutas.Text = "Reporteador de rutas"
         Me.BtnReporteadorRutas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1667,7 +1639,7 @@ Partial Class FormPrincipal
         Me.BtnCobranza.Location = New System.Drawing.Point(0, 350)
         Me.BtnCobranza.Name = "BtnCobranza"
         Me.BtnCobranza.Rotation = 0R
-        Me.BtnCobranza.Size = New System.Drawing.Size(252, 35)
+        Me.BtnCobranza.Size = New System.Drawing.Size(235, 35)
         Me.BtnCobranza.TabIndex = 11
         Me.BtnCobranza.Text = "Cobranza"
         Me.BtnCobranza.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1693,7 +1665,7 @@ Partial Class FormPrincipal
         Me.BtnDocumentosClientes.Location = New System.Drawing.Point(0, 315)
         Me.BtnDocumentosClientes.Name = "BtnDocumentosClientes"
         Me.BtnDocumentosClientes.Rotation = 0R
-        Me.BtnDocumentosClientes.Size = New System.Drawing.Size(252, 35)
+        Me.BtnDocumentosClientes.Size = New System.Drawing.Size(235, 35)
         Me.BtnDocumentosClientes.TabIndex = 10
         Me.BtnDocumentosClientes.Text = "Documentos a clientes"
         Me.BtnDocumentosClientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1719,7 +1691,7 @@ Partial Class FormPrincipal
         Me.BtnLiberarCheques.Location = New System.Drawing.Point(0, 280)
         Me.BtnLiberarCheques.Name = "BtnLiberarCheques"
         Me.BtnLiberarCheques.Rotation = 0R
-        Me.BtnLiberarCheques.Size = New System.Drawing.Size(252, 35)
+        Me.BtnLiberarCheques.Size = New System.Drawing.Size(235, 35)
         Me.BtnLiberarCheques.TabIndex = 9
         Me.BtnLiberarCheques.Text = "Liberar cheques"
         Me.BtnLiberarCheques.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1745,7 +1717,7 @@ Partial Class FormPrincipal
         Me.BtnClientes.Location = New System.Drawing.Point(0, 245)
         Me.BtnClientes.Name = "BtnClientes"
         Me.BtnClientes.Rotation = 0R
-        Me.BtnClientes.Size = New System.Drawing.Size(252, 35)
+        Me.BtnClientes.Size = New System.Drawing.Size(235, 35)
         Me.BtnClientes.TabIndex = 8
         Me.BtnClientes.Text = "Clientes"
         Me.BtnClientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1771,7 +1743,7 @@ Partial Class FormPrincipal
         Me.BtnVerOfertas.Location = New System.Drawing.Point(0, 210)
         Me.BtnVerOfertas.Name = "BtnVerOfertas"
         Me.BtnVerOfertas.Rotation = 0R
-        Me.BtnVerOfertas.Size = New System.Drawing.Size(252, 35)
+        Me.BtnVerOfertas.Size = New System.Drawing.Size(235, 35)
         Me.BtnVerOfertas.TabIndex = 7
         Me.BtnVerOfertas.Text = "Ver ofertas"
         Me.BtnVerOfertas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1797,7 +1769,7 @@ Partial Class FormPrincipal
         Me.BtnCrearOfertas.Location = New System.Drawing.Point(0, 175)
         Me.BtnCrearOfertas.Name = "BtnCrearOfertas"
         Me.BtnCrearOfertas.Rotation = 0R
-        Me.BtnCrearOfertas.Size = New System.Drawing.Size(252, 35)
+        Me.BtnCrearOfertas.Size = New System.Drawing.Size(235, 35)
         Me.BtnCrearOfertas.TabIndex = 6
         Me.BtnCrearOfertas.Text = "Crear ofertas"
         Me.BtnCrearOfertas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1823,7 +1795,7 @@ Partial Class FormPrincipal
         Me.BtnOfertas.Location = New System.Drawing.Point(0, 140)
         Me.BtnOfertas.Name = "BtnOfertas"
         Me.BtnOfertas.Rotation = 0R
-        Me.BtnOfertas.Size = New System.Drawing.Size(252, 35)
+        Me.BtnOfertas.Size = New System.Drawing.Size(235, 35)
         Me.BtnOfertas.TabIndex = 5
         Me.BtnOfertas.Text = "Ofertas"
         Me.BtnOfertas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1849,7 +1821,7 @@ Partial Class FormPrincipal
         Me.BtnRuta_Cliente.Location = New System.Drawing.Point(0, 105)
         Me.BtnRuta_Cliente.Name = "BtnRuta_Cliente"
         Me.BtnRuta_Cliente.Rotation = 0R
-        Me.BtnRuta_Cliente.Size = New System.Drawing.Size(252, 35)
+        Me.BtnRuta_Cliente.Size = New System.Drawing.Size(235, 35)
         Me.BtnRuta_Cliente.TabIndex = 4
         Me.BtnRuta_Cliente.Text = "Ruta-Cliente"
         Me.BtnRuta_Cliente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1875,7 +1847,7 @@ Partial Class FormPrincipal
         Me.BtnVendedores.Location = New System.Drawing.Point(0, 70)
         Me.BtnVendedores.Name = "BtnVendedores"
         Me.BtnVendedores.Rotation = 0R
-        Me.BtnVendedores.Size = New System.Drawing.Size(252, 35)
+        Me.BtnVendedores.Size = New System.Drawing.Size(235, 35)
         Me.BtnVendedores.TabIndex = 3
         Me.BtnVendedores.Text = "Vendedores"
         Me.BtnVendedores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1901,7 +1873,7 @@ Partial Class FormPrincipal
         Me.BtnFacComandas.Location = New System.Drawing.Point(0, 35)
         Me.BtnFacComandas.Name = "BtnFacComandas"
         Me.BtnFacComandas.Rotation = 0R
-        Me.BtnFacComandas.Size = New System.Drawing.Size(252, 35)
+        Me.BtnFacComandas.Size = New System.Drawing.Size(235, 35)
         Me.BtnFacComandas.TabIndex = 2
         Me.BtnFacComandas.Text = "Facturacion de comandas de PG"
         Me.BtnFacComandas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1927,7 +1899,7 @@ Partial Class FormPrincipal
         Me.BtnFacRutas.Location = New System.Drawing.Point(0, 0)
         Me.BtnFacRutas.Name = "BtnFacRutas"
         Me.BtnFacRutas.Rotation = 0R
-        Me.BtnFacRutas.Size = New System.Drawing.Size(252, 35)
+        Me.BtnFacRutas.Size = New System.Drawing.Size(235, 35)
         Me.BtnFacRutas.TabIndex = 1
         Me.BtnFacRutas.Text = "Facturacion de rutas"
         Me.BtnFacRutas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -1953,7 +1925,7 @@ Partial Class FormPrincipal
         Me.BtnVentas.Location = New System.Drawing.Point(0, 0)
         Me.BtnVentas.Name = "BtnVentas"
         Me.BtnVentas.Rotation = 0R
-        Me.BtnVentas.Size = New System.Drawing.Size(252, 43)
+        Me.BtnVentas.Size = New System.Drawing.Size(235, 43)
         Me.BtnVentas.TabIndex = 6
         Me.BtnVentas.Text = "      VENTAS"
         Me.BtnVentas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -1963,22 +1935,22 @@ Partial Class FormPrincipal
         '
         Me.SubMenuTransition.AnimationType = BunifuAnimatorNS.AnimationType.VertBlind
         Me.SubMenuTransition.Cursor = Nothing
-        Animation2.AnimateOnlyDifferences = True
-        Animation2.BlindCoeff = CType(resources.GetObject("Animation2.BlindCoeff"), System.Drawing.PointF)
-        Animation2.LeafCoeff = 0!
-        Animation2.MaxTime = 1.0!
-        Animation2.MinTime = 0!
-        Animation2.MosaicCoeff = CType(resources.GetObject("Animation2.MosaicCoeff"), System.Drawing.PointF)
-        Animation2.MosaicShift = CType(resources.GetObject("Animation2.MosaicShift"), System.Drawing.PointF)
-        Animation2.MosaicSize = 0
-        Animation2.Padding = New System.Windows.Forms.Padding(0)
-        Animation2.RotateCoeff = 0!
-        Animation2.RotateLimit = 0!
-        Animation2.ScaleCoeff = CType(resources.GetObject("Animation2.ScaleCoeff"), System.Drawing.PointF)
-        Animation2.SlideCoeff = CType(resources.GetObject("Animation2.SlideCoeff"), System.Drawing.PointF)
-        Animation2.TimeCoeff = 0!
-        Animation2.TransparencyCoeff = 0!
-        Me.SubMenuTransition.DefaultAnimation = Animation2
+        Animation1.AnimateOnlyDifferences = True
+        Animation1.BlindCoeff = CType(resources.GetObject("Animation1.BlindCoeff"), System.Drawing.PointF)
+        Animation1.LeafCoeff = 0!
+        Animation1.MaxTime = 1.0!
+        Animation1.MinTime = 0!
+        Animation1.MosaicCoeff = CType(resources.GetObject("Animation1.MosaicCoeff"), System.Drawing.PointF)
+        Animation1.MosaicShift = CType(resources.GetObject("Animation1.MosaicShift"), System.Drawing.PointF)
+        Animation1.MosaicSize = 0
+        Animation1.Padding = New System.Windows.Forms.Padding(0)
+        Animation1.RotateCoeff = 0!
+        Animation1.RotateLimit = 0!
+        Animation1.ScaleCoeff = CType(resources.GetObject("Animation1.ScaleCoeff"), System.Drawing.PointF)
+        Animation1.SlideCoeff = CType(resources.GetObject("Animation1.SlideCoeff"), System.Drawing.PointF)
+        Animation1.TimeCoeff = 0!
+        Animation1.TransparencyCoeff = 0!
+        Me.SubMenuTransition.DefaultAnimation = Animation1
         '
         'PanelFormularios
         '
@@ -1997,8 +1969,8 @@ Partial Class FormPrincipal
         Me.BunifuGradientPanel1.Controls.Add(Me.IconButton1)
         Me.SubMenuTransition.SetDecoration(Me.BunifuGradientPanel1, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.BunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.BunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.Teal
+        Me.BunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.Teal
         Me.BunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.Black
         Me.BunifuGradientPanel1.GradientTopRight = System.Drawing.Color.Black
         Me.BunifuGradientPanel1.Location = New System.Drawing.Point(0, 0)
@@ -2122,25 +2094,24 @@ Partial Class FormPrincipal
     Private WithEvents BtnOrdenCompra As FontAwesome.Sharp.IconButton
     Private WithEvents BtnComprasMenu As FontAwesome.Sharp.IconButton
     Private WithEvents BtnCompras As FontAwesome.Sharp.IconButton
-    Private WithEvents IconButton19 As FontAwesome.Sharp.IconButton
-    Private WithEvents IconButton18 As FontAwesome.Sharp.IconButton
-    Private WithEvents IconButton17 As FontAwesome.Sharp.IconButton
-    Private WithEvents IconButton16 As FontAwesome.Sharp.IconButton
+    Private WithEvents BtnReporteador As FontAwesome.Sharp.IconButton
+    Private WithEvents BtnConversiones As FontAwesome.Sharp.IconButton
+    Private WithEvents BtnConceptos As FontAwesome.Sharp.IconButton
+    Private WithEvents BtnNotificaciones As FontAwesome.Sharp.IconButton
     Private WithEvents BtnActualizacionInv As FontAwesome.Sharp.IconButton
-    Private WithEvents BtnInvSelectivo As FontAwesome.Sharp.IconButton
     Private WithEvents BtnInvFisico As FontAwesome.Sharp.IconButton
-    Private WithEvents IconButton15 As FontAwesome.Sharp.IconButton
-    Private WithEvents IconButton14 As FontAwesome.Sharp.IconButton
-    Private WithEvents IconButton13 As FontAwesome.Sharp.IconButton
-    Private WithEvents IconButton12 As FontAwesome.Sharp.IconButton
-    Private WithEvents IconButton11 As FontAwesome.Sharp.IconButton
-    Private WithEvents IconButton10 As FontAwesome.Sharp.IconButton
-    Private WithEvents IconButton9 As FontAwesome.Sharp.IconButton
-    Private WithEvents IconButton8 As FontAwesome.Sharp.IconButton
-    Private WithEvents IconButton7 As FontAwesome.Sharp.IconButton
-    Private WithEvents IconButton6 As FontAwesome.Sharp.IconButton
-    Private WithEvents IconButton5 As FontAwesome.Sharp.IconButton
-    Private WithEvents IconButton4 As FontAwesome.Sharp.IconButton
-    Private WithEvents IconButton3 As FontAwesome.Sharp.IconButton
-    Private WithEvents IconButton2 As FontAwesome.Sharp.IconButton
+    Private WithEvents BtnPedidoMercancia As FontAwesome.Sharp.IconButton
+    Private WithEvents BtnTraspasosEAlmacenes As FontAwesome.Sharp.IconButton
+    Private WithEvents SalidaMercancia As FontAwesome.Sharp.IconButton
+    Private WithEvents BtnEntradasMercancia As FontAwesome.Sharp.IconButton
+    Private WithEvents BtnTablajeria As FontAwesome.Sharp.IconButton
+    Private WithEvents BtnMinMax As FontAwesome.Sharp.IconButton
+    Private WithEvents BtnProductosProcesados As FontAwesome.Sharp.IconButton
+    Private WithEvents BtnEscalasPrecio As FontAwesome.Sharp.IconButton
+    Private WithEvents BtnFamYDepartamentos As FontAwesome.Sharp.IconButton
+    Private WithEvents BtnVerificadorProductos As FontAwesome.Sharp.IconButton
+    Private WithEvents BtnActivacionPrecios As FontAwesome.Sharp.IconButton
+    Private WithEvents BtnCatalogoProductos As FontAwesome.Sharp.IconButton
+    Private WithEvents BtnProductos As FontAwesome.Sharp.IconButton
+    Private WithEvents BtnSucursalesYAlmacenes As FontAwesome.Sharp.IconButton
 End Class

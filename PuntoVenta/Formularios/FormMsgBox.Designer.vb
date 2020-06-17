@@ -28,15 +28,15 @@ Partial Class FormMsgBox
         Me.MsgCancelar = New FontAwesome.Sharp.IconButton()
         Me.MsgAceptar = New FontAwesome.Sharp.IconButton()
         Me.LabelMensaje = New Bunifu.Framework.UI.BunifuCustomLabel()
-        Me.bunifuGradientPanel1.SuspendLayout()
+        Me.IconPictureBox1 = New FontAwesome.Sharp.IconPictureBox()
+        CType(Me.IconPictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'bunifuGradientPanel1
         '
         Me.bunifuGradientPanel1.BackgroundImage = CType(resources.GetObject("bunifuGradientPanel1.BackgroundImage"), System.Drawing.Image)
         Me.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.bunifuGradientPanel1.Controls.Add(Me.LabelTitulo)
-        Me.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.Teal
         Me.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.Teal
         Me.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.Black
@@ -44,7 +44,7 @@ Partial Class FormMsgBox
         Me.bunifuGradientPanel1.Location = New System.Drawing.Point(0, 0)
         Me.bunifuGradientPanel1.Name = "bunifuGradientPanel1"
         Me.bunifuGradientPanel1.Quality = 10
-        Me.bunifuGradientPanel1.Size = New System.Drawing.Size(490, 38)
+        Me.bunifuGradientPanel1.Size = New System.Drawing.Size(25, 186)
         Me.bunifuGradientPanel1.TabIndex = 14
         '
         'LabelTitulo
@@ -52,8 +52,8 @@ Partial Class FormMsgBox
         Me.LabelTitulo.AutoSize = True
         Me.LabelTitulo.BackColor = System.Drawing.Color.Transparent
         Me.LabelTitulo.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelTitulo.ForeColor = System.Drawing.Color.White
-        Me.LabelTitulo.Location = New System.Drawing.Point(5, 7)
+        Me.LabelTitulo.ForeColor = System.Drawing.Color.Silver
+        Me.LabelTitulo.Location = New System.Drawing.Point(142, 35)
         Me.LabelTitulo.Name = "LabelTitulo"
         Me.LabelTitulo.Size = New System.Drawing.Size(55, 26)
         Me.LabelTitulo.TabIndex = 12
@@ -74,7 +74,7 @@ Partial Class FormMsgBox
         Me.MsgCancelar.IconColor = System.Drawing.Color.White
         Me.MsgCancelar.IconSize = 32
         Me.MsgCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.MsgCancelar.Location = New System.Drawing.Point(221, 144)
+        Me.MsgCancelar.Location = New System.Drawing.Point(283, 144)
         Me.MsgCancelar.Name = "MsgCancelar"
         Me.MsgCancelar.Rotation = 0R
         Me.MsgCancelar.Size = New System.Drawing.Size(128, 35)
@@ -97,7 +97,7 @@ Partial Class FormMsgBox
         Me.MsgAceptar.IconColor = System.Drawing.Color.White
         Me.MsgAceptar.IconSize = 32
         Me.MsgAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.MsgAceptar.Location = New System.Drawing.Point(355, 144)
+        Me.MsgAceptar.Location = New System.Drawing.Point(417, 144)
         Me.MsgAceptar.Name = "MsgAceptar"
         Me.MsgAceptar.Rotation = 0R
         Me.MsgAceptar.Size = New System.Drawing.Size(128, 35)
@@ -107,21 +107,37 @@ Partial Class FormMsgBox
         '
         'LabelMensaje
         '
+        Me.LabelMensaje.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.LabelMensaje.AutoSize = True
         Me.LabelMensaje.BackColor = System.Drawing.Color.Transparent
         Me.LabelMensaje.Font = New System.Drawing.Font("Poppins", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelMensaje.ForeColor = System.Drawing.Color.Silver
-        Me.LabelMensaje.Location = New System.Drawing.Point(7, 50)
+        Me.LabelMensaje.Location = New System.Drawing.Point(119, 93)
         Me.LabelMensaje.Name = "LabelMensaje"
         Me.LabelMensaje.Size = New System.Drawing.Size(354, 31)
         Me.LabelMensaje.TabIndex = 16
         Me.LabelMensaje.Text = "No hay registros para su busqueda"
         '
+        'IconPictureBox1
+        '
+        Me.IconPictureBox1.BackColor = System.Drawing.SystemColors.Control
+        Me.IconPictureBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(67, Byte), Integer))
+        Me.IconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.InfoCircle
+        Me.IconPictureBox1.IconColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(67, Byte), Integer), CType(CType(67, Byte), Integer))
+        Me.IconPictureBox1.IconSize = 82
+        Me.IconPictureBox1.Location = New System.Drawing.Point(42, 8)
+        Me.IconPictureBox1.Name = "IconPictureBox1"
+        Me.IconPictureBox1.Size = New System.Drawing.Size(85, 82)
+        Me.IconPictureBox1.TabIndex = 19
+        Me.IconPictureBox1.TabStop = False
+        '
         'FormMsgBox
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(490, 186)
+        Me.ClientSize = New System.Drawing.Size(557, 186)
+        Me.Controls.Add(Me.IconPictureBox1)
+        Me.Controls.Add(Me.LabelTitulo)
         Me.Controls.Add(Me.MsgCancelar)
         Me.Controls.Add(Me.MsgAceptar)
         Me.Controls.Add(Me.LabelMensaje)
@@ -130,8 +146,7 @@ Partial Class FormMsgBox
         Me.Name = "FormMsgBox"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormMsgBox"
-        Me.bunifuGradientPanel1.ResumeLayout(False)
-        Me.bunifuGradientPanel1.PerformLayout()
+        CType(Me.IconPictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -142,4 +157,5 @@ Partial Class FormMsgBox
     Private WithEvents MsgCancelar As FontAwesome.Sharp.IconButton
     Private WithEvents MsgAceptar As FontAwesome.Sharp.IconButton
     Private WithEvents LabelMensaje As Bunifu.Framework.UI.BunifuCustomLabel
+    Friend WithEvents IconPictureBox1 As FontAwesome.Sharp.IconPictureBox
 End Class

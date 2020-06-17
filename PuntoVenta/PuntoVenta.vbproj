@@ -66,11 +66,25 @@
     <Reference Include="Carbon.Versioning, Version=1.8.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Carbon.Versioning.1.8.1\lib\netstandard2.0\Carbon.Versioning.dll</HintPath>
     </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="FontAwesome.Sharp, Version=5.12.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.5.12.1\lib\net45\FontAwesome.Sharp.dll</HintPath>
     </Reference>
     <Reference Include="GitHub, Version=1.24.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\GitHub.1.24.0\lib\netstandard2.0\GitHub.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.1.1\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
@@ -115,6 +129,8 @@
     <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
     </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -139,6 +155,30 @@
     <Compile Include="Clases\Almacen.vb" />
     <Compile Include="Clases\ConexionSQL.vb" />
     <Compile Include="Clases\Sesion.vb" />
+    <Compile Include="Formularios\FormActualizacionInventario.Designer.vb">
+      <DependentUpon>FormActualizacionInventario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormActualizacionInventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormAutorizacion.Designer.vb">
+      <DependentUpon>FormAutorizacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormAutorizacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormBuscadorProductos.Designer.vb">
+      <DependentUpon>FormBuscadorProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormBuscadorProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormEntradas.Designer.vb">
+      <DependentUpon>FormEntradas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormEntradas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formularios\FormInventarioFisico.Designer.vb">
       <DependentUpon>FormInventarioFisico.vb</DependentUpon>
     </Compile>
@@ -155,6 +195,12 @@
       <DependentUpon>FormPrincipal.vb</DependentUpon>
     </Compile>
     <Compile Include="Formularios\FormPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FormReportes.Designer.vb">
+      <DependentUpon>FormReportes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormReportes.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\Login.vb">
@@ -180,8 +226,27 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Clases\Utility.vb" />
+    <Compile Include="Objetos\Entradas.vb" />
+    <Compile Include="Reportes\RptInventarioFisico.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptInventarioFisico.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Formularios\FormActualizacionInventario.resx">
+      <DependentUpon>FormActualizacionInventario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormAutorizacion.resx">
+      <DependentUpon>FormAutorizacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormBuscadorProductos.resx">
+      <DependentUpon>FormBuscadorProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormEntradas.resx">
+      <DependentUpon>FormEntradas.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FormInventarioFisico.resx">
       <DependentUpon>FormInventarioFisico.vb</DependentUpon>
     </EmbeddedResource>
@@ -191,6 +256,9 @@
     <EmbeddedResource Include="Formularios\FormPrincipal.resx">
       <DependentUpon>FormPrincipal.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormReportes.resx">
+      <DependentUpon>FormReportes.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
@@ -199,6 +267,10 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\RptInventarioFisico.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptInventarioFisico.vb</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -228,6 +300,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Icono Restaurar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

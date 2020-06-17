@@ -2,6 +2,17 @@
     Public _usuario As String
     Public _idusuario As String
 
+    Public _terminarInventario As Boolean = False
+
+
+    Public Property TerminarInventario() As Boolean
+        Get
+            Return _terminarInventario
+        End Get
+        Set(ByVal value As Boolean)
+            _terminarInventario = value
+        End Set
+    End Property
 
     Public Property Usuario() As String
         Get

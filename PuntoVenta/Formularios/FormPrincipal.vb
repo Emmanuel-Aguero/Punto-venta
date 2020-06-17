@@ -45,7 +45,9 @@ Public Class FormPrincipal
 
     End Sub
     Private Sub CloseWindow_Click(sender As Object, e As EventArgs) Handles CloseWindow.Click
+        formularioActual.Close()
         Me.Close()
+
     End Sub
 
     Private Sub MaximizeWindow_Click(sender As Object, e As EventArgs) Handles MaximizeWindow.Click
@@ -102,6 +104,14 @@ Public Class FormPrincipal
             bordeBotonIzq.Visible = True
             bordeBotonIzq.BringToFront()
         End If
+    End Sub
+
+    Private Sub BtnActualizacionInv_Click(sender As Object, e As EventArgs) Handles BtnActualizacionInv.Click
+        OpenFormulario(New FormActualizacionInventario)
+    End Sub
+
+    Private Sub BtnEntradasMercancia_Click(sender As Object, e As EventArgs) Handles BtnEntradasMercancia.Click
+        OpenFormulario(New FormEntradas)
     End Sub
 
     Private Sub DesactivarBoton()
